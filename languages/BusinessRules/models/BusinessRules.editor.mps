@@ -89,7 +89,7 @@
     <ref role="1XX52x" to="vigk:D1JLeNLNCs" resolve="Comment" />
     <node concept="3EZMnI" id="D1JLeNMaqX" role="2wV5jI">
       <node concept="3F0ifn" id="D1JLeNMarC" role="3EZMnx">
-        <property role="3F0ifm" value="//" />
+        <property role="3F0ifm" value="--" />
         <node concept="pVoyu" id="D1JLeNMarF" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
