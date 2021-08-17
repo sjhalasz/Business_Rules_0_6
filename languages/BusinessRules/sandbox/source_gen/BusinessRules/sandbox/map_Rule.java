@@ -24,8 +24,20 @@ public class map_Rule {
 
   public static void main(String[] args) {
     System.out.println("Running tests...");
-    test(0 == From(true, false, false, 20210801)[0]);
-    test(0 == From(false, true, false, 20210801)[0]);
+    test(sameAs(0, From(true, false, false, 20210801)));
+    test(sameAs(0, From(false, true, false, 20210801)));
+  }
+  private static boolean sameAs(Object[] a, Object[] b) {
+    if (a.length != b.length) {
+      return false;
+    }
+    int i = 0;
+    for (; i < a.length; i = i + 1) {
+      if (!(a[i].equals(b[i]))) {
+        return false;
+      }
+    }
+    return true;
   }
   private static void test(boolean b) {
     if (b) {
