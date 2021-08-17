@@ -4,31 +4,28 @@ package BusinessRules.sandbox;
 
 
 public class map_Rule {
-  protected static int From(boolean CashClient, boolean MoneyMarketSecurity, boolean TreasuryBillSecurity, int TransactionDate) {
+  protected static Object[] From(boolean CashClient, boolean MoneyMarketSecurity, boolean TreasuryBillSecurity, int TransactionDate) {
     // Number of days from contract to settlement
     // The following cases settle immediately
     if (CashClient) {
-
-      return 0;
+      return new Object[]{0};
     }
     // In other cases, until June 7, 1995, it was 5 days
     if (TransactionDate < 19950607) {
-
-      return 5;
+      return new Object[]{5};
     }
     // From then until September 5, 2017 it was 3 days
     if (TransactionDate < 20170905) {
-
-      return 3;
+      return new Object[]{3};
     }
     // From then until now, it is 2 days
-    return 2;
+    return new Object[]{2};
   }
 
   public static void main(String[] args) {
     System.out.println("Running tests...");
-    test(0 == From(true, false, false, 20210801));
-    test(0 == From(false, true, false, 20210801));
+    test(0 == From(true, false, false, 20210801)[0]);
+    test(0 == From(false, true, false, 20210801)[0]);
   }
   private static void test(boolean b) {
     if (b) {

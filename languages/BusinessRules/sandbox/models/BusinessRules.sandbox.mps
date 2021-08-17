@@ -218,7 +218,10 @@
         <node concept="2TxCgz" id="59uf$wSvMRo" role="2TxChK" />
       </node>
     </node>
-    <node concept="2TxClH" id="5hEbLxMWiLu" role="AA$ev" />
+    <node concept="2TxCn2" id="5hEbLxMXTzm" role="AA$ev">
+      <property role="TrG5h" value="Days" />
+      <node concept="2TxClH" id="5hEbLxMXTzs" role="2TxCnK" />
+    </node>
   </node>
 </model>
 

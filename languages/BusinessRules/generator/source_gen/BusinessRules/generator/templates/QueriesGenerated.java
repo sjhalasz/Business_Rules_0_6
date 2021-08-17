@@ -91,9 +91,6 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.defaultReturn$CUFb);
   }
   public static SNode sourceNodeQuery_1_3(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.returnType$aDnd);
-  }
-  public static SNode sourceNodeQuery_1_4(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.returnExpected$Giiy);
   }
   public static SNode sourceNodeQuery_2_0(final SourceSubstituteMacroNodeContext _context) {
@@ -138,7 +135,6 @@ public class QueriesGenerated extends QueryProviderBase {
     snqMethods.put("5935249838827398490", new SNQ(i++));
     snqMethods.put("5935249838827401183", new SNQ(i++));
     snqMethods.put("5935249838827409260", new SNQ(i++));
-    snqMethods.put("6082726028771458824", new SNQ(i++));
     snqMethods.put("6082726028770848981", new SNQ(i++));
     snqMethods.put("6082726028770145012", new SNQ(i++));
     snqMethods.put("6082726028770144830", new SNQ(i++));
@@ -178,10 +174,8 @@ public class QueriesGenerated extends QueryProviderBase {
         case 9:
           return QueriesGenerated.sourceNodeQuery_1_3(ctx);
         case 10:
-          return QueriesGenerated.sourceNodeQuery_1_4(ctx);
-        case 11:
           return QueriesGenerated.sourceNodeQuery_2_0(ctx);
-        case 12:
+        case 11:
           return QueriesGenerated.sourceNodeQuery_2_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -332,7 +326,6 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink value$Ronk = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L, 0x546a2f1872ea8ec9L, "value");
     /*package*/ static final SContainmentLink ifStatement$CzFD = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b74L, 0xa41bf13b3c73bbfL, "ifStatement");
     /*package*/ static final SContainmentLink defaultReturn$CUFb = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b74L, 0xa41bf13b3c73be2L, "defaultReturn");
-    /*package*/ static final SContainmentLink returnType$aDnd = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b74L, 0x546a2f1872f06c87L, "returnType");
     /*package*/ static final SContainmentLink returnExpected$Giiy = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73c00L, 0xa41bf13b3c73c23L, "returnExpected");
     /*package*/ static final SContainmentLink returnExpression$_819 = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b44L, 0xa41bf13b3c73b63L, "returnExpression");
     /*package*/ static final SContainmentLink ifCondition$_1dG = MetaAdapterFactory.getContainmentLink(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b44L, 0xa41bf13b3c73b5bL, "ifCondition");
