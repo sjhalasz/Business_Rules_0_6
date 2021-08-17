@@ -236,6 +236,12 @@
       <node concept="3F0A7n" id="59uf$wSv4hM" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="3F0ifn" id="5hEbLxMWiMs" role="3EZMnx">
+        <property role="3F0ifm" value="as" />
+      </node>
+      <node concept="3F1sOY" id="5hEbLxMWiNm" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxMW6M7" resolve="returnType" />
+      </node>
       <node concept="3F2HdR" id="59uf$wSv4hX" role="3EZMnx">
         <ref role="1NtTu8" to="vigk:D1JLeNLNIM" resolve="comments" />
         <node concept="l2Vlx" id="59uf$wSv4hZ" role="2czzBx" />

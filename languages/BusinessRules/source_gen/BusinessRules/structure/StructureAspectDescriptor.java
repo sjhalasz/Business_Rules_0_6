@@ -280,6 +280,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934388");
     b.version(2);
+    b.aggregate("returnType", 0x546a2f1872f06c87L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a59L).optional(false).ordered(true).multiple(false).origin("6082726028771355783").done();
     b.aggregate("parameters", 0xa41bf13b3c73bb0L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L).optional(false).ordered(true).multiple(true).origin("739081905206934448").done();
     b.aggregate("comments", 0xa41bf13b3c73bb2L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1cL).optional(false).ordered(true).multiple(true).origin("739081905206934450").done();
     b.aggregate("ifStatement", 0xa41bf13b3c73bbfL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b44L).optional(false).ordered(true).multiple(false).origin("739081905206934463").done();

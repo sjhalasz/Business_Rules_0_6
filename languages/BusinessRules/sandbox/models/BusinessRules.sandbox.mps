@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="0b885910-aced-43e1-8b6d-9840b91c1156" name="BusinessRules">
-      <concept id="6082726028770971317" name="BusinessRules.structure.TestValueDate" flags="ng" index="Awa6H">
+      <concept id="6082726028770971317" name="BusinessRules.structure.TestValueInteger" flags="ng" index="Awa6H">
         <property id="6082726028770971323" name="value" index="Awa6z" />
       </concept>
       <concept id="6082726028770971304" name="BusinessRules.structure.TestValueBoolean" flags="ng" index="Awa6K">
@@ -41,6 +41,7 @@
         <child id="739081905206934386" name="ifStatement" index="2TxChx" />
       </concept>
       <concept id="739081905206934388" name="BusinessRules.structure.Rule" flags="ng" index="2TxChB">
+        <child id="6082726028771355783" name="returnType" index="AA$ev" />
         <child id="739081905206934450" name="comments" index="2TxCix" />
         <child id="739081905206934448" name="parameters" index="2TxCiz" />
         <child id="739081905206934463" name="ifStatement" index="2TxCiG" />
@@ -217,6 +218,7 @@
         <node concept="2TxCgz" id="59uf$wSvMRo" role="2TxChK" />
       </node>
     </node>
+    <node concept="2TxClH" id="5hEbLxMWiLu" role="AA$ev" />
   </node>
 </model>
 
