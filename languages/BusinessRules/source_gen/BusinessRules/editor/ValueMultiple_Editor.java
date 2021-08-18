@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class TestReturnValue_Editor extends DefaultNodeEditor {
+public class ValueMultiple_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TestReturnValue_EditorBuilder_a(editorContext, node).createCell();
+    return new ValueMultiple_EditorBuilder_a(editorContext, node).createCell();
   }
 }

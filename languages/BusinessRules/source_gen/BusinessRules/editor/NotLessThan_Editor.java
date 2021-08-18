@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class TestValueInteger_Editor extends DefaultNodeEditor {
+public class NotLessThan_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new TestValueInteger_EditorBuilder_a(editorContext, node).createCell();
+    return new NotLessThan_EditorBuilder_a(editorContext, node).createCell();
   }
 }

@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptAll = createDescriptorForAll();
   /*package*/ final ConceptDescriptor myConceptAny = createDescriptorForAny();
   /*package*/ final ConceptDescriptor myConceptBefore = createDescriptorForBefore();
   /*package*/ final ConceptDescriptor myConceptBoolean = createDescriptorForBoolean();
@@ -21,25 +22,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDatePicker = createDescriptorForDatePicker();
   /*package*/ final ConceptDescriptor myConceptElseStatement = createDescriptorForElseStatement();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
+  /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
+  /*package*/ final ConceptDescriptor myConceptLessThan = createDescriptorForLessThan();
+  /*package*/ final ConceptDescriptor myConceptMinus = createDescriptorForMinus();
+  /*package*/ final ConceptDescriptor myConceptNotLessThan = createDescriptorForNotLessThan();
   /*package*/ final ConceptDescriptor myConceptParameter = createDescriptorForParameter();
   /*package*/ final ConceptDescriptor myConceptParameterReferenceBoolean = createDescriptorForParameterReferenceBoolean();
   /*package*/ final ConceptDescriptor myConceptParameterReferenceDate = createDescriptorForParameterReferenceDate();
+  /*package*/ final ConceptDescriptor myConceptParameterReferenceInteger = createDescriptorForParameterReferenceInteger();
   /*package*/ final ConceptDescriptor myConceptReturn0Days = createDescriptorForReturn0Days();
   /*package*/ final ConceptDescriptor myConceptReturn1Day = createDescriptorForReturn1Day();
   /*package*/ final ConceptDescriptor myConceptReturn2Days = createDescriptorForReturn2Days();
   /*package*/ final ConceptDescriptor myConceptReturn3Days = createDescriptorForReturn3Days();
   /*package*/ final ConceptDescriptor myConceptReturn5Days = createDescriptorForReturn5Days();
   /*package*/ final ConceptDescriptor myConceptReturnExpression = createDescriptorForReturnExpression();
+  /*package*/ final ConceptDescriptor myConceptReturnMultiple = createDescriptorForReturnMultiple();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
   /*package*/ final ConceptDescriptor myConceptTest = createDescriptorForTest();
   /*package*/ final ConceptDescriptor myConceptTestParameterValue = createDescriptorForTestParameterValue();
-  /*package*/ final ConceptDescriptor myConceptTestReturnValue = createDescriptorForTestReturnValue();
-  /*package*/ final ConceptDescriptor myConceptTestValue = createDescriptorForTestValue();
-  /*package*/ final ConceptDescriptor myConceptTestValueBoolean = createDescriptorForTestValueBoolean();
-  /*package*/ final ConceptDescriptor myConceptTestValueInteger = createDescriptorForTestValueInteger();
   /*package*/ final ConceptDescriptor myConceptType = createDescriptorForType();
   /*package*/ final ConceptDescriptor myConceptTypeBoolean = createDescriptorForTypeBoolean();
   /*package*/ final ConceptDescriptor myConceptTypeDate = createDescriptorForTypeDate();
+  /*package*/ final ConceptDescriptor myConceptValue = createDescriptorForValue();
+  /*package*/ final ConceptDescriptor myConceptValueBoolean = createDescriptorForValueBoolean();
+  /*package*/ final ConceptDescriptor myConceptValueInteger = createDescriptorForValueInteger();
+  /*package*/ final ConceptDescriptor myConceptValueMultiple = createDescriptorForValueMultiple();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -54,13 +61,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptElseStatement, myConceptIfStatement, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptReturn0Days, myConceptReturn1Day, myConceptReturn2Days, myConceptReturn3Days, myConceptReturn5Days, myConceptReturnExpression, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptTestReturnValue, myConceptTestValue, myConceptTestValueBoolean, myConceptTestValueInteger, myConceptType, myConceptTypeBoolean, myConceptTypeDate);
+    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptElseStatement, myConceptIfStatement, myConceptInteger, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturn0Days, myConceptReturn1Day, myConceptReturn2Days, myConceptReturn3Days, myConceptReturn5Days, myConceptReturnExpression, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.All:
+        return myConceptAll;
       case LanguageConceptSwitch.Any:
         return myConceptAny;
       case LanguageConceptSwitch.Before:
@@ -77,12 +86,22 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptElseStatement;
       case LanguageConceptSwitch.IfStatement:
         return myConceptIfStatement;
+      case LanguageConceptSwitch.Integer:
+        return myConceptInteger;
+      case LanguageConceptSwitch.LessThan:
+        return myConceptLessThan;
+      case LanguageConceptSwitch.Minus:
+        return myConceptMinus;
+      case LanguageConceptSwitch.NotLessThan:
+        return myConceptNotLessThan;
       case LanguageConceptSwitch.Parameter:
         return myConceptParameter;
       case LanguageConceptSwitch.ParameterReferenceBoolean:
         return myConceptParameterReferenceBoolean;
       case LanguageConceptSwitch.ParameterReferenceDate:
         return myConceptParameterReferenceDate;
+      case LanguageConceptSwitch.ParameterReferenceInteger:
+        return myConceptParameterReferenceInteger;
       case LanguageConceptSwitch.Return0Days:
         return myConceptReturn0Days;
       case LanguageConceptSwitch.Return1Day:
@@ -95,26 +114,28 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptReturn5Days;
       case LanguageConceptSwitch.ReturnExpression:
         return myConceptReturnExpression;
+      case LanguageConceptSwitch.ReturnMultiple:
+        return myConceptReturnMultiple;
       case LanguageConceptSwitch.Rule:
         return myConceptRule;
       case LanguageConceptSwitch.Test:
         return myConceptTest;
       case LanguageConceptSwitch.TestParameterValue:
         return myConceptTestParameterValue;
-      case LanguageConceptSwitch.TestReturnValue:
-        return myConceptTestReturnValue;
-      case LanguageConceptSwitch.TestValue:
-        return myConceptTestValue;
-      case LanguageConceptSwitch.TestValueBoolean:
-        return myConceptTestValueBoolean;
-      case LanguageConceptSwitch.TestValueInteger:
-        return myConceptTestValueInteger;
       case LanguageConceptSwitch.Type:
         return myConceptType;
       case LanguageConceptSwitch.TypeBoolean:
         return myConceptTypeBoolean;
       case LanguageConceptSwitch.TypeDate:
         return myConceptTypeDate;
+      case LanguageConceptSwitch.Value:
+        return myConceptValue;
+      case LanguageConceptSwitch.ValueBoolean:
+        return myConceptValueBoolean;
+      case LanguageConceptSwitch.ValueInteger:
+        return myConceptValueInteger;
+      case LanguageConceptSwitch.ValueMultiple:
+        return myConceptValueMultiple;
       default:
         return null;
     }
@@ -125,6 +146,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForAll() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "All", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f18730146ecL);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.Boolean", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772460268");
+    b.version(2);
+    b.aggregate("ifConditions", 0x546a2f1873014757L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L).optional(false).ordered(true).multiple(true).origin("6082726028772460375").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForAny() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Any", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73aa5L);
     b.class_(false, false, false);
@@ -194,6 +224,43 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("returnExpression", 0xa41bf13b3c73b63L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L).optional(false).ordered(true).multiple(false).origin("739081905206934371").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForInteger() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Integer", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f18730469b1L);
+    b.class_(false, false, false);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772665777");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessThan() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "LessThan", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ff68a3L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.Boolean", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772337827");
+    b.version(2);
+    b.aggregate("left", 0x546a2f1872ff68e9L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("6082726028772337897").done();
+    b.aggregate("right", 0x546a2f1872ff693cL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("6082726028772337980").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMinus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Minus", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x42575fae37fe2434L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.ValueInteger", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/4780394731345421364");
+    b.version(2);
+    b.aggregate("left", 0x42575fae37fe243aL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("4780394731345421370").done();
+    b.aggregate("right", 0x42575fae37fe243cL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("4780394731345421372").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNotLessThan() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "NotLessThan", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1873015beeL);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.Boolean", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772465646");
+    b.version(2);
+    b.aggregate("left", 0x546a2f1873015c45L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("6082726028772465733").done();
+    b.aggregate("right", 0x546a2f1873015c7dL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L).optional(false).ordered(true).multiple(false).origin("6082726028772465789").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForParameter() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Parameter", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L);
     b.class_(false, false, false);
@@ -219,6 +286,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934273");
     b.version(2);
     b.associate("parameter", 0xa41bf13b3c73b07L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L).optional(false).origin("739081905206934279").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForParameterReferenceInteger() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "ParameterReferenceInteger", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1873003de2L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.ValueInteger", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772392418");
+    b.version(2);
+    b.associate("parameter", 0x546a2f1873003e43L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L).optional(false).origin("6082726028772392515").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReturn0Days() {
@@ -273,6 +349,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForReturnMultiple() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "ReturnMultiple", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f187303504bL);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772593739");
+    b.version(2);
+    b.aggregate("values", 0x42575fae380a5555L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x42575fae380a4e1dL).optional(false).ordered(true).multiple(false).origin("4780394731346220373").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRule() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Rule", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b74L);
     b.class_(false, false, true);
@@ -298,7 +383,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("parameterComments", 0xa41bf13b3c73c06L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1cL).optional(false).ordered(true).multiple(true).origin("739081905206934534").done();
     b.aggregate("parameterValues", 0xa41bf13b3c73c08L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b09L).optional(false).ordered(true).multiple(true).origin("739081905206934536").done();
     b.aggregate("returnComments", 0xa41bf13b3c73c1aL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1cL).optional(false).ordered(true).multiple(true).origin("739081905206934554").done();
-    b.aggregate("returnExpected", 0xa41bf13b3c73c23L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L).optional(false).ordered(true).multiple(false).origin("739081905206934563").done();
+    b.aggregate("returnExpected", 0xa41bf13b3c73c23L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x42575fae380a4e1dL).optional(false).ordered(true).multiple(false).origin("739081905206934563").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForTestParameterValue() {
@@ -307,40 +392,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934281");
     b.version(2);
-    b.aggregate("value", 0x546a2f1872ea8ec2L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8e9dL).optional(false).ordered(true).multiple(false).origin("6082726028770971330").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTestReturnValue() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "TestReturnValue", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L);
-    b.class_(false, false, false);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770914744");
-    b.version(2);
-    b.aggregate("value", 0x546a2f1872ea8ec9L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8e9dL).optional(false).ordered(true).multiple(false).origin("6082726028770971337").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTestValue() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "TestValue", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8e9dL);
-    b.class_(false, true, false);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770971293");
-    b.version(2);
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTestValueBoolean() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "TestValueBoolean", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8ea8L);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.TestValue", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8e9dL);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770971304");
-    b.version(2);
-    b.property("value", 0x546a2f1872ea8eaeL).type(PrimitiveTypeId.BOOLEAN).origin("6082726028770971310").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForTestValueInteger() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "TestValueInteger", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.TestValue", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8e9dL);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770971317");
-    b.version(2);
-    b.property("value", 0x546a2f1872ea8ebbL).type(PrimitiveTypeId.INTEGER).origin("6082726028770971323").done();
+    b.aggregate("value", 0x546a2f1872ea8ec2L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L).optional(false).ordered(true).multiple(false).origin("6082726028770971330").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForType() {
@@ -366,6 +418,39 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934142");
     b.version(2);
     b.alias("int");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForValue() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Value", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L);
+    b.class_(false, true, false);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770914744");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForValueBoolean() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "ValueBoolean", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8ea8L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.Value", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770971304");
+    b.version(2);
+    b.property("value", 0x546a2f1872ea8eaeL).type(PrimitiveTypeId.BOOLEAN).origin("6082726028770971310").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForValueInteger() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "ValueInteger", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872ea8eb5L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.Value", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028770971317");
+    b.version(2);
+    b.property("value", 0x546a2f1872ea8ebbL).type(PrimitiveTypeId.INTEGER).origin("6082726028770971323").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForValueMultiple() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "ValueMultiple", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x42575fae380a4e1dL);
+    b.class_(false, false, false);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/4780394731346218525");
+    b.version(2);
+    b.aggregate("values", 0x42575fae380a4e23L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f1872e9b1b8L).optional(false).ordered(true).multiple(true).origin("4780394731346218531").done();
     return b.create();
   }
 }

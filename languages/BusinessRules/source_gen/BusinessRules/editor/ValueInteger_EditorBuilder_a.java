@@ -23,11 +23,11 @@ import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
-/*package*/ class TestValueInteger_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class ValueInteger_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public TestValueInteger_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public ValueInteger_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }

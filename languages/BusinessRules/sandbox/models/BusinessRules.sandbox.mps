@@ -7,14 +7,21 @@
   <imports />
   <registry>
     <language id="0b885910-aced-43e1-8b6d-9840b91c1156" name="BusinessRules">
-      <concept id="6082726028770971317" name="BusinessRules.structure.TestValueInteger" flags="ng" index="Awa6H">
+      <concept id="6082726028770971317" name="BusinessRules.structure.ValueInteger" flags="ng" index="Awa6H">
         <property id="6082726028770971323" name="value" index="Awa6z" />
       </concept>
-      <concept id="6082726028770971304" name="BusinessRules.structure.TestValueBoolean" flags="ng" index="Awa6K">
+      <concept id="6082726028770971304" name="BusinessRules.structure.ValueBoolean" flags="ng" index="Awa6K">
         <property id="6082726028770971310" name="value" index="Awa6Q" />
       </concept>
-      <concept id="6082726028770914744" name="BusinessRules.structure.TestReturnValue" flags="ng" index="AwTUw">
-        <child id="6082726028770971337" name="value" index="Awa7h" />
+      <concept id="6082726028772593739" name="BusinessRules.structure.ReturnMultiple" flags="ng" index="BqnXj">
+        <child id="4780394731346220373" name="values" index="1UngFV" />
+      </concept>
+      <concept id="6082726028772392418" name="BusinessRules.structure.ParameterReferenceInteger" flags="ng" index="BqxbU">
+        <reference id="6082726028772392515" name="parameter" index="Bqx5r" />
+      </concept>
+      <concept id="6082726028772465646" name="BusinessRules.structure.NotLessThan" flags="ng" index="BqRjQ">
+        <child id="6082726028772465733" name="left" index="BqRdt" />
+        <child id="6082726028772465789" name="right" index="BqRd_" />
       </concept>
       <concept id="739081905206934528" name="BusinessRules.structure.Test" flags="ng" index="2TxCcj">
         <child id="739081905206934554" name="returnComments" index="2TxCc9" />
@@ -71,6 +78,13 @@
       <concept id="739081905206934250" name="BusinessRules.structure.ParameterReferenceBoolean" flags="ng" index="2TxCnT">
         <reference id="739081905206934271" name="parameter" index="2TxCnG" />
       </concept>
+      <concept id="4780394731345421364" name="BusinessRules.structure.Minus" flags="ng" index="1PEnIq">
+        <child id="4780394731345421372" name="right" index="1PEnIi" />
+        <child id="4780394731345421370" name="left" index="1PEnIk" />
+      </concept>
+      <concept id="4780394731346218525" name="BusinessRules.structure.ValueMultiple" flags="ng" index="1Unh6N">
+        <child id="4780394731346218531" name="values" index="1Unh6d" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -107,8 +121,8 @@
           <property role="Awa6z" value="20210801" />
         </node>
       </node>
-      <node concept="AwTUw" id="5hEbLxMURMv" role="2TxCcK">
-        <node concept="Awa6H" id="5hEbLxMURNe" role="Awa7h">
+      <node concept="1Unh6N" id="6TYbYUaJKiB" role="2TxCcK">
+        <node concept="Awa6H" id="6TYbYUaJKj6" role="1Unh6d">
           <property role="Awa6z" value="0" />
         </node>
       </node>
@@ -140,8 +154,8 @@
       <node concept="2TxCkf" id="5hEbLxMURNl" role="2TxCc9">
         <property role="2TxCke" value="... is 0 days" />
       </node>
-      <node concept="AwTUw" id="5hEbLxMURNm" role="2TxCcK">
-        <node concept="Awa6H" id="5hEbLxMUROg" role="Awa7h">
+      <node concept="1Unh6N" id="6TYbYUaJKkT" role="2TxCcK">
+        <node concept="Awa6H" id="6TYbYUaJKlo" role="1Unh6d">
           <property role="Awa6z" value="0" />
         </node>
       </node>
@@ -221,6 +235,120 @@
     <node concept="2TxCn2" id="5hEbLxMXTzm" role="AA$ev">
       <property role="TrG5h" value="Days" />
       <node concept="2TxClH" id="5hEbLxMXTzs" role="2TxCnK" />
+    </node>
+  </node>
+  <node concept="2TxChB" id="49nnUSS0eOY">
+    <property role="TrG5h" value="FreeRidingViolation" />
+    <node concept="2TxCn2" id="49nnUSS0eOZ" role="AA$ev">
+      <property role="TrG5h" value="Violation" />
+      <node concept="2TxClR" id="49nnUSS0ePo" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="49nnUSS0ePr" role="AA$ev">
+      <property role="TrG5h" value="NewAccountProFormaCashAvailable" />
+      <node concept="2TxClH" id="49nnUSS0ePx" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="49nnUSS0eP1" role="2TxCiz">
+      <property role="TrG5h" value="NumberOfSettlementDays" />
+      <node concept="2TxClH" id="49nnUSS0ePI" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="49nnUSS0ePL" role="2TxCiz">
+      <property role="TrG5h" value="LotDaysSincePurchase" />
+      <node concept="2TxClH" id="49nnUSS0ePW" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="49nnUSS0ePZ" role="2TxCiz">
+      <property role="TrG5h" value="TransactionLotReceivablesUsed" />
+      <node concept="2TxClH" id="49nnUSS0eQc" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="49nnUSS0eQf" role="2TxCiz">
+      <property role="TrG5h" value="AccountProFormaCashAvailable" />
+      <node concept="2TxClH" id="49nnUSS0eQu" role="2TxCnK" />
+    </node>
+    <node concept="2TxCkf" id="49nnUSS0eP3" role="2TxCix">
+      <property role="2TxCke" value="Free Riding Violation test and update of cash available" />
+    </node>
+    <node concept="2TxChn" id="49nnUSS0eP4" role="2TxCiG">
+      <node concept="2TxCkf" id="49nnUSS0eP5" role="2TxCh7">
+        <property role="2TxCke" value="If settled or sufficient cash to fund purchase" />
+      </node>
+      <node concept="2TxCmQ" id="49nnUSS0TZi" role="2TxCh8">
+        <node concept="BqRjQ" id="49nnUSS0TZo" role="2TxCmG">
+          <node concept="BqxbU" id="49nnUSS0TZx" role="BqRdt">
+            <ref role="Bqx5r" node="49nnUSS0ePL" resolve="LotDaysSincePurchase" />
+          </node>
+          <node concept="BqxbU" id="49nnUSS0TZ$" role="BqRd_">
+            <ref role="Bqx5r" node="49nnUSS0eP1" resolve="NumberOfSettlementDays" />
+          </node>
+        </node>
+        <node concept="BqRjQ" id="49nnUSS0U1x" role="2TxCmG">
+          <node concept="BqxbU" id="49nnUSS0U1K" role="BqRd_">
+            <ref role="Bqx5r" node="49nnUSS0ePZ" resolve="TransactionLotReceivablesUsed" />
+          </node>
+          <node concept="BqxbU" id="49nnUSS1LFq" role="BqRdt">
+            <ref role="Bqx5r" node="49nnUSS0eQf" resolve="AccountProFormaCashAvailable" />
+          </node>
+        </node>
+      </node>
+      <node concept="BqnXj" id="49nnUSS2RnJ" role="2TxChK">
+        <node concept="1Unh6N" id="49nnUSS2RnL" role="1UngFV">
+          <node concept="Awa6K" id="49nnUSS2RnS" role="1Unh6d" />
+          <node concept="1PEnIq" id="49nnUSS2RnY" role="1Unh6d">
+            <node concept="BqxbU" id="49nnUSS2Ro8" role="1PEnIk">
+              <ref role="Bqx5r" node="49nnUSS0eQf" resolve="AccountProFormaCashAvailable" />
+            </node>
+            <node concept="BqxbU" id="49nnUSS2Rob" role="1PEnIi">
+              <ref role="Bqx5r" node="49nnUSS0ePZ" resolve="TransactionLotReceivablesUsed" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2TxCkf" id="49nnUSS0eP8" role="2TxCj4">
+      <property role="2TxCke" value="Otherwise, report violation" />
+    </node>
+    <node concept="2TxCcj" id="49nnUSS0ePa" role="2TxCjX">
+      <node concept="2TxCkf" id="49nnUSS0ePb" role="2TxCcl">
+        <property role="2TxCke" value="Not settled but sufficient cash to fund purchase" />
+      </node>
+      <node concept="2TxCgq" id="49nnUSS0ePc" role="2TxCcr">
+        <property role="TrG5h" value="NumberOfSettlementDays" />
+        <node concept="Awa6H" id="49nnUSS0U05" role="Awa7q">
+          <property role="Awa6z" value="2" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="49nnUSS0TZX" role="2TxCcr">
+        <property role="TrG5h" value="LotDaysSincePurchase" />
+        <node concept="Awa6H" id="49nnUSS0U08" role="Awa7q">
+          <property role="Awa6z" value="1" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="49nnUSS0TZR" role="2TxCcr">
+        <property role="TrG5h" value="TransactionLotReceivablesUsed" />
+        <node concept="Awa6H" id="49nnUSS0U0b" role="Awa7q">
+          <property role="Awa6z" value="100" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="49nnUSS0U0e" role="2TxCcr">
+        <property role="TrG5h" value="AccountProFormaCashAvailable" />
+        <node concept="Awa6H" id="49nnUSS0U0o" role="Awa7q">
+          <property role="Awa6z" value="125" />
+        </node>
+      </node>
+      <node concept="2TxCkf" id="49nnUSS0ePe" role="2TxCc9">
+        <property role="2TxCke" value="Expect no violation and net cash available" />
+      </node>
+      <node concept="1Unh6N" id="6TYbYUaJx7M" role="2TxCcK">
+        <node concept="Awa6K" id="6TYbYUaJKoe" role="1Unh6d" />
+        <node concept="Awa6H" id="6TYbYUaJKq0" role="1Unh6d">
+          <property role="Awa6z" value="25" />
+        </node>
+      </node>
+    </node>
+    <node concept="BqnXj" id="49nnUSS2Rog" role="2TxCjL">
+      <node concept="1Unh6N" id="49nnUSS2Roi" role="1UngFV">
+        <node concept="Awa6K" id="49nnUSS2Ros" role="1Unh6d">
+          <property role="Awa6Q" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -145,6 +145,9 @@
       </node>
       <node concept="3F0ifn" id="D1JLeNMc1g" role="3EZMnx">
         <property role="3F0ifm" value="if" />
+        <node concept="pVoyu" id="5hEbLxN0Ah1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F1sOY" id="D1JLeNMc1_" role="3EZMnx">
         <ref role="1NtTu8" to="vigk:D1JLeNLNHr" resolve="ifCondition" />
@@ -338,7 +341,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F1sOY" id="5hEbLxMUr7C" role="3EZMnx">
+      <node concept="3F1sOY" id="6TYbYUaJx9F" role="3EZMnx">
         <ref role="1NtTu8" to="vigk:D1JLeNLNKz" resolve="returnExpected" />
       </node>
       <node concept="l2Vlx" id="59uf$wSv4lU" role="2iSdaV" />
@@ -356,22 +359,106 @@
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
-  <node concept="24kQdi" id="5hEbLxMUr77">
-    <ref role="1XX52x" to="vigk:5hEbLxMUr6S" resolve="TestReturnValue" />
-    <node concept="3F1sOY" id="5hEbLxMUCVd" role="2wV5jI">
-      <ref role="1NtTu8" to="vigk:5hEbLxMUCV9" resolve="value" />
-    </node>
-  </node>
   <node concept="24kQdi" id="5hEbLxMUCVD">
-    <ref role="1XX52x" to="vigk:5hEbLxMUCUP" resolve="TestValueInteger" />
+    <ref role="1XX52x" to="vigk:5hEbLxMUCUP" resolve="ValueInteger" />
     <node concept="3F0A7n" id="5hEbLxMUCVF" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:5hEbLxMUCUV" resolve="value" />
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxMUCVU">
-    <ref role="1XX52x" to="vigk:5hEbLxMUCUC" resolve="TestValueBoolean" />
+    <ref role="1XX52x" to="vigk:5hEbLxMUCUC" resolve="ValueBoolean" />
     <node concept="3F0A7n" id="5hEbLxMUCVW" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:5hEbLxMUCUI" resolve="value" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5hEbLxMZQAW">
+    <ref role="1XX52x" to="vigk:5hEbLxMZQyz" resolve="LessThan" />
+    <node concept="3EZMnI" id="5hEbLxMZQAY" role="2wV5jI">
+      <node concept="3F1sOY" id="5hEbLxMZQB5" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxMZQzD" resolve="left" />
+      </node>
+      <node concept="3F0ifn" id="5hEbLxMZQBb" role="3EZMnx">
+        <property role="3F0ifm" value="is less than" />
+      </node>
+      <node concept="3F1sOY" id="5hEbLxMZQBj" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxMZQ$W" resolve="right" />
+      </node>
+      <node concept="l2Vlx" id="5hEbLxMZQB1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5hEbLxN0jj3">
+    <ref role="1XX52x" to="vigk:5hEbLxN03Ry" resolve="ParameterReferenceInteger" />
+    <node concept="1iCGBv" id="5hEbLxN0jjw" role="2wV5jI">
+      <ref role="1NtTu8" to="vigk:5hEbLxN03T3" resolve="parameter" />
+      <node concept="1sVBvm" id="5hEbLxN0jjy" role="1sWHZn">
+        <node concept="3F0A7n" id="5hEbLxN0jk4" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5hEbLxN0kv5">
+    <ref role="1XX52x" to="vigk:5hEbLxN0krG" resolve="All" />
+    <node concept="3EZMnI" id="5hEbLxN0kvy" role="2wV5jI">
+      <node concept="3F0ifn" id="5hEbLxN0kw4" role="3EZMnx">
+        <property role="3F0ifm" value="All" />
+      </node>
+      <node concept="3F2HdR" id="5hEbLxN0kx0" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxN0ktn" resolve="ifConditions" />
+        <node concept="2iRkQZ" id="5hEbLxN0kx3" role="2czzBx" />
+        <node concept="VPM3Z" id="5hEbLxN0kx4" role="3F10Kt" />
+      </node>
+      <node concept="l2Vlx" id="5hEbLxN0kv_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5hEbLxN0lOe">
+    <ref role="1XX52x" to="vigk:5hEbLxN0lJI" resolve="NotLessThan" />
+    <node concept="3EZMnI" id="5hEbLxN0lOF" role="2wV5jI">
+      <node concept="3F1sOY" id="5hEbLxN0lPd" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxN0lL5" resolve="left" />
+      </node>
+      <node concept="3F0ifn" id="5hEbLxN0lQ9" role="3EZMnx">
+        <property role="3F0ifm" value="is not less than" />
+      </node>
+      <node concept="3F1sOY" id="5hEbLxN0lTe" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:5hEbLxN0lLX" resolve="right" />
+      </node>
+      <node concept="l2Vlx" id="5hEbLxN0lOI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5hEbLxN0P7l">
+    <ref role="1XX52x" to="vigk:5hEbLxN0P1b" resolve="ReturnMultiple" />
+    <node concept="3EZMnI" id="5hEbLxN0P7n" role="2wV5jI">
+      <node concept="3F0ifn" id="5hEbLxN0P7u" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F1sOY" id="49nnUSS2Ct8" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:49nnUSS2_ll" resolve="values" />
+      </node>
+      <node concept="l2Vlx" id="5hEbLxN0P7q" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="49nnUSRZyhg">
+    <ref role="1XX52x" to="vigk:49nnUSRZygO" resolve="Minus" />
+    <node concept="3EZMnI" id="49nnUSRZyhi" role="2wV5jI">
+      <node concept="3F1sOY" id="49nnUSRZyhp" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:49nnUSRZygU" resolve="left" />
+      </node>
+      <node concept="3F0ifn" id="49nnUSRZyhv" role="3EZMnx">
+        <property role="3F0ifm" value="-" />
+      </node>
+      <node concept="3F1sOY" id="49nnUSRZyhB" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:49nnUSRZygW" resolve="right" />
+      </node>
+      <node concept="l2Vlx" id="49nnUSRZyhl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="49nnUSS2Cto">
+    <ref role="1XX52x" to="vigk:49nnUSS2$St" resolve="ValueMultiple" />
+    <node concept="3F2HdR" id="49nnUSS2Ctq" role="2wV5jI">
+      <ref role="1NtTu8" to="vigk:49nnUSS2$Sz" resolve="values" />
+      <node concept="2iRkQZ" id="49nnUSS2Cts" role="2czzBx" />
     </node>
   </node>
 </model>
