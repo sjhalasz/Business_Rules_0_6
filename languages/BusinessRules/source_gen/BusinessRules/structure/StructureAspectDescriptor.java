@@ -249,7 +249,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForParameter() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Parameter", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L);
     b.class_(false, false, false);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a3afa8c0dL);
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934225");
     b.version(2);
     b.aggregate("type", 0xa41bf13b3c73ae3L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a59L).optional(false).ordered(true).multiple(false).origin("739081905206934243").done();
@@ -301,7 +301,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForRule() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Rule", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b74L);
     b.class_(false, false, true);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a3afa8c0dL);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934388");
     b.version(2);
