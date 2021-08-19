@@ -30,11 +30,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptParameterReferenceBoolean = createDescriptorForParameterReferenceBoolean();
   /*package*/ final ConceptDescriptor myConceptParameterReferenceDate = createDescriptorForParameterReferenceDate();
   /*package*/ final ConceptDescriptor myConceptParameterReferenceInteger = createDescriptorForParameterReferenceInteger();
-  /*package*/ final ConceptDescriptor myConceptReturn0Days = createDescriptorForReturn0Days();
-  /*package*/ final ConceptDescriptor myConceptReturn1Day = createDescriptorForReturn1Day();
-  /*package*/ final ConceptDescriptor myConceptReturn2Days = createDescriptorForReturn2Days();
-  /*package*/ final ConceptDescriptor myConceptReturn3Days = createDescriptorForReturn3Days();
-  /*package*/ final ConceptDescriptor myConceptReturn5Days = createDescriptorForReturn5Days();
   /*package*/ final ConceptDescriptor myConceptReturnExpression = createDescriptorForReturnExpression();
   /*package*/ final ConceptDescriptor myConceptReturnMultiple = createDescriptorForReturnMultiple();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
@@ -61,7 +56,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptElseStatement, myConceptIfStatement, myConceptInteger, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturn0Days, myConceptReturn1Day, myConceptReturn2Days, myConceptReturn3Days, myConceptReturn5Days, myConceptReturnExpression, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
+    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptElseStatement, myConceptIfStatement, myConceptInteger, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturnExpression, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
   }
 
   @Override
@@ -102,16 +97,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptParameterReferenceDate;
       case LanguageConceptSwitch.ParameterReferenceInteger:
         return myConceptParameterReferenceInteger;
-      case LanguageConceptSwitch.Return0Days:
-        return myConceptReturn0Days;
-      case LanguageConceptSwitch.Return1Day:
-        return myConceptReturn1Day;
-      case LanguageConceptSwitch.Return2Days:
-        return myConceptReturn2Days;
-      case LanguageConceptSwitch.Return3Days:
-        return myConceptReturn3Days;
-      case LanguageConceptSwitch.Return5Days:
-        return myConceptReturn5Days;
       case LanguageConceptSwitch.ReturnExpression:
         return myConceptReturnExpression;
       case LanguageConceptSwitch.ReturnMultiple:
@@ -295,51 +280,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772392418");
     b.version(2);
     b.associate("parameter", 0x546a2f1873003e43L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73ad1L).optional(false).origin("6082726028772392515").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForReturn0Days() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Return0Days", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b23L);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934307");
-    b.version(2);
-    b.alias("0 days");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForReturn1Day() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Return1Day", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b2eL);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934318");
-    b.version(2);
-    b.alias("1 day");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForReturn2Days() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Return2Days", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b2fL);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934319");
-    b.version(2);
-    b.alias("2 days");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForReturn3Days() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Return3Days", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b30L);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934320");
-    b.version(2);
-    b.alias("3 days");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForReturn5Days() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Return5Days", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73b31L);
-    b.class_(false, false, false);
-    b.super_("BusinessRules.structure.ReturnExpression", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a37L);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934321");
-    b.version(2);
-    b.alias("5 days");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForReturnExpression() {

@@ -26,23 +26,18 @@ public final class LanguageConceptSwitch {
   public static final int ParameterReferenceBoolean = 14;
   public static final int ParameterReferenceDate = 15;
   public static final int ParameterReferenceInteger = 16;
-  public static final int Return0Days = 17;
-  public static final int Return1Day = 18;
-  public static final int Return2Days = 19;
-  public static final int Return3Days = 20;
-  public static final int Return5Days = 21;
-  public static final int ReturnExpression = 22;
-  public static final int ReturnMultiple = 23;
-  public static final int Rule = 24;
-  public static final int Test = 25;
-  public static final int TestParameterValue = 26;
-  public static final int Type = 27;
-  public static final int TypeBoolean = 28;
-  public static final int TypeDate = 29;
-  public static final int Value = 30;
-  public static final int ValueBoolean = 31;
-  public static final int ValueInteger = 32;
-  public static final int ValueMultiple = 33;
+  public static final int ReturnExpression = 17;
+  public static final int ReturnMultiple = 18;
+  public static final int Rule = 19;
+  public static final int Test = 20;
+  public static final int TestParameterValue = 21;
+  public static final int Type = 22;
+  public static final int TypeBoolean = 23;
+  public static final int TypeDate = 24;
+  public static final int Value = 25;
+  public static final int ValueBoolean = 26;
+  public static final int ValueInteger = 27;
+  public static final int ValueMultiple = 28;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xb885910aced43e1L, 0x8b6d9840b91c1156L);
@@ -63,11 +58,6 @@ public final class LanguageConceptSwitch {
     builder.put(0xa41bf13b3c73aeaL, ParameterReferenceBoolean);
     builder.put(0xa41bf13b3c73b01L, ParameterReferenceDate);
     builder.put(0x546a2f1873003de2L, ParameterReferenceInteger);
-    builder.put(0xa41bf13b3c73b23L, Return0Days);
-    builder.put(0xa41bf13b3c73b2eL, Return1Day);
-    builder.put(0xa41bf13b3c73b2fL, Return2Days);
-    builder.put(0xa41bf13b3c73b30L, Return3Days);
-    builder.put(0xa41bf13b3c73b31L, Return5Days);
     builder.put(0xa41bf13b3c73a37L, ReturnExpression);
     builder.put(0x546a2f187303504bL, ReturnMultiple);
     builder.put(0xa41bf13b3c73b74L, Rule);

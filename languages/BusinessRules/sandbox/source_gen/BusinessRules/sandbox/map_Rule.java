@@ -4,19 +4,28 @@ package BusinessRules.sandbox;
 
 
 public class map_Rule {
-  protected static Object[] From(int NumberOfSettlementDays, int LotDaysSincePurchase, int TransactionLotReceivablesUsed, int AccountProFormaCashAvailable) {
-    // Free Riding Violation test and update of cash available
-    // If settled or sufficient cash to fund purchase
-    if (LotDaysSincePurchase >= NumberOfSettlementDays) {
-      return Object[]{false, AccountProFormaCashAvailable - TransactionLotReceivablesUsed};
+  protected static Object[] From(boolean CashClient, boolean MoneyMarketSecurity, boolean TreasuryBillSecurity, int TransactionDate) {
+    // Number of days from contract to settlement
+    // The following cases settle immediately
+    if (CashClient) {
+      return Object[]{0};
     }
-    // Otherwise, report violation
-    return Object[]{true};
+    // In other cases, until June 7, 1995, it was 5 days
+    if (TransactionDate < 19950607) {
+      return Object[]{5};
+    }
+    // From then until September 5, 2017 it was 3 days
+    if (TransactionDate < 20170905) {
+      return Object[]{3};
+    }
+    // From then until now, it is 2 days
+    return Object[]{2};
   }
 
   public static void main(String[] args) {
     System.out.println("Running tests...");
-    test(sameAs(Object[]{false, 25}, From(2, 1, 100, 125)));
+    test(sameAs(Object[]{0}, From(true, false, false, 20210801)));
+    test(sameAs(Object[]{0}, From(false, true, false, 20210801)));
   }
   private static boolean sameAs(Object[] a, Object[] b) {
     if (a.length != b.length) {

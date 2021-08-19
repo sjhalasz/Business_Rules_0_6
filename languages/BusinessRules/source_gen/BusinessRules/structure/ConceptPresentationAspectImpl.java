@@ -26,11 +26,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ParameterReferenceBoolean;
   private ConceptPresentation props_ParameterReferenceDate;
   private ConceptPresentation props_ParameterReferenceInteger;
-  private ConceptPresentation props_Return0Days;
-  private ConceptPresentation props_Return1Day;
-  private ConceptPresentation props_Return2Days;
-  private ConceptPresentation props_Return3Days;
-  private ConceptPresentation props_Return5Days;
   private ConceptPresentation props_ReturnExpression;
   private ConceptPresentation props_ReturnMultiple;
   private ConceptPresentation props_Rule;
@@ -166,41 +161,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ParameterReferenceInteger = cpb.create();
         }
         return props_ParameterReferenceInteger;
-      case LanguageConceptSwitch.Return0Days:
-        if (props_Return0Days == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("0 days");
-          props_Return0Days = cpb.create();
-        }
-        return props_Return0Days;
-      case LanguageConceptSwitch.Return1Day:
-        if (props_Return1Day == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("1 day");
-          props_Return1Day = cpb.create();
-        }
-        return props_Return1Day;
-      case LanguageConceptSwitch.Return2Days:
-        if (props_Return2Days == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("2 days");
-          props_Return2Days = cpb.create();
-        }
-        return props_Return2Days;
-      case LanguageConceptSwitch.Return3Days:
-        if (props_Return3Days == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("3 days");
-          props_Return3Days = cpb.create();
-        }
-        return props_Return3Days;
-      case LanguageConceptSwitch.Return5Days:
-        if (props_Return5Days == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("5 days");
-          props_Return5Days = cpb.create();
-        }
-        return props_Return5Days;
       case LanguageConceptSwitch.ReturnExpression:
         if (props_ReturnExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

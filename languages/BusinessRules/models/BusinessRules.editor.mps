@@ -55,8 +55,14 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="D1JLeNMaoF">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:D1JLeNLNE_" resolve="Any" />
     <node concept="3EZMnI" id="D1JLeNMaoM" role="2wV5jI">
       <node concept="3F0ifn" id="D1JLeNMaoY" role="3EZMnx">
@@ -71,6 +77,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="D1JLeNMaq4">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:D1JLeNLNFb" resolve="Before" />
     <node concept="3EZMnI" id="D1JLeNMaqb" role="2wV5jI">
       <node concept="3F1sOY" id="D1JLeNMaqn" role="3EZMnx">
@@ -101,12 +108,14 @@
     </node>
   </node>
   <node concept="24kQdi" id="D1JLeNMasc">
+    <property role="3GE5qa" value="Type" />
     <ref role="1XX52x" to="vigk:D1JLeNLNCv" resolve="Date" />
     <node concept="PMmxH" id="D1JLeNMase" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="D1JLeNMasx">
+    <property role="3GE5qa" value="Type" />
     <ref role="1XX52x" to="vigk:D1JLeNLNCE" resolve="DatePicker" />
     <node concept="3F0A7n" id="D1JLeNMasz" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:D1JLeNLNCP" resolve="date" />
@@ -156,6 +165,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="D1JLeNMc1Z">
+    <property role="3GE5qa" value="Parameter" />
     <ref role="1XX52x" to="vigk:D1JLeNLNFh" resolve="Parameter" />
     <node concept="3EZMnI" id="D1JLeNMc21" role="2wV5jI">
       <node concept="3F1sOY" id="D1JLeNMc2d" role="3EZMnx">
@@ -168,6 +178,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="D1JLeNMc2H">
+    <property role="3GE5qa" value="Parameter" />
     <ref role="1XX52x" to="vigk:D1JLeNLNFE" resolve="ParameterReferenceBoolean" />
     <node concept="1iCGBv" id="D1JLeNMc2J" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:D1JLeNLNFZ" resolve="parameter" />
@@ -180,6 +191,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv1bp">
+    <property role="3GE5qa" value="Parameter" />
     <ref role="1XX52x" to="vigk:D1JLeNLNG1" resolve="ParameterReferenceDate" />
     <node concept="1iCGBv" id="59uf$wSv1b_" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:D1JLeNLNG7" resolve="parameter" />
@@ -192,6 +204,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv1c7">
+    <property role="3GE5qa" value="Test" />
     <ref role="1XX52x" to="vigk:D1JLeNLNG9" resolve="TestParameterValue" />
     <node concept="3EZMnI" id="5hEbLxMUogd" role="2wV5jI">
       <node concept="3F0A7n" id="5hEbLxMUogk" role="3EZMnx">
@@ -201,36 +214,6 @@
         <ref role="1NtTu8" to="vigk:5hEbLxMUCV2" resolve="value" />
       </node>
       <node concept="l2Vlx" id="5hEbLxMUogg" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59uf$wSv1cK">
-    <ref role="1XX52x" to="vigk:D1JLeNLNGz" resolve="Return0Days" />
-    <node concept="3F0ifn" id="59uf$wSv1cR" role="2wV5jI">
-      <property role="3F0ifm" value="is 0 days" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59uf$wSv1d1">
-    <ref role="1XX52x" to="vigk:D1JLeNLNGI" resolve="Return1Day" />
-    <node concept="3F0ifn" id="59uf$wSv1d3" role="2wV5jI">
-      <property role="3F0ifm" value="is 1 day" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59uf$wSv1dd">
-    <ref role="1XX52x" to="vigk:D1JLeNLNGJ" resolve="Return2Days" />
-    <node concept="3F0ifn" id="59uf$wSv1df" role="2wV5jI">
-      <property role="3F0ifm" value="is 2 days" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59uf$wSv1dp">
-    <ref role="1XX52x" to="vigk:D1JLeNLNGK" resolve="Return3Days" />
-    <node concept="3F0ifn" id="59uf$wSv1dr" role="2wV5jI">
-      <property role="3F0ifm" value="is 3 days" />
-    </node>
-  </node>
-  <node concept="24kQdi" id="59uf$wSv1d_">
-    <ref role="1XX52x" to="vigk:D1JLeNLNGL" resolve="Return5Days" />
-    <node concept="3F0ifn" id="59uf$wSv1dB" role="2wV5jI">
-      <property role="3F0ifm" value="is 5 days" />
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv4h$">
@@ -311,6 +294,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv4lP">
+    <property role="3GE5qa" value="Test" />
     <ref role="1XX52x" to="vigk:D1JLeNLNK0" resolve="Test" />
     <node concept="3EZMnI" id="59uf$wSv4lR" role="2wV5jI">
       <node concept="3F2HdR" id="59uf$wSv4m3" role="3EZMnx">
@@ -348,30 +332,35 @@
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv4oM">
+    <property role="3GE5qa" value="Type" />
     <ref role="1XX52x" to="vigk:D1JLeNLND$" resolve="TypeBoolean" />
     <node concept="PMmxH" id="59uf$wSv4oT" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="59uf$wSv4p2">
+    <property role="3GE5qa" value="Type" />
     <ref role="1XX52x" to="vigk:D1JLeNLNDY" resolve="TypeDate" />
     <node concept="PMmxH" id="59uf$wSv4p4" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxMUCVD">
+    <property role="3GE5qa" value="Value" />
     <ref role="1XX52x" to="vigk:5hEbLxMUCUP" resolve="ValueInteger" />
     <node concept="3F0A7n" id="5hEbLxMUCVF" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:5hEbLxMUCUV" resolve="value" />
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxMUCVU">
+    <property role="3GE5qa" value="Value" />
     <ref role="1XX52x" to="vigk:5hEbLxMUCUC" resolve="ValueBoolean" />
     <node concept="3F0A7n" id="5hEbLxMUCVW" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:5hEbLxMUCUI" resolve="value" />
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxMZQAW">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:5hEbLxMZQyz" resolve="LessThan" />
     <node concept="3EZMnI" id="5hEbLxMZQAY" role="2wV5jI">
       <node concept="3F1sOY" id="5hEbLxMZQB5" role="3EZMnx">
@@ -387,6 +376,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxN0jj3">
+    <property role="3GE5qa" value="Parameter" />
     <ref role="1XX52x" to="vigk:5hEbLxN03Ry" resolve="ParameterReferenceInteger" />
     <node concept="1iCGBv" id="5hEbLxN0jjw" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:5hEbLxN03T3" resolve="parameter" />
@@ -399,6 +389,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxN0kv5">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:5hEbLxN0krG" resolve="All" />
     <node concept="3EZMnI" id="5hEbLxN0kvy" role="2wV5jI">
       <node concept="3F0ifn" id="5hEbLxN0kw4" role="3EZMnx">
@@ -413,6 +404,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5hEbLxN0lOe">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:5hEbLxN0lJI" resolve="NotLessThan" />
     <node concept="3EZMnI" id="5hEbLxN0lOF" role="2wV5jI">
       <node concept="3F1sOY" id="5hEbLxN0lPd" role="3EZMnx">
@@ -440,6 +432,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="49nnUSRZyhg">
+    <property role="3GE5qa" value="Operators" />
     <ref role="1XX52x" to="vigk:49nnUSRZygO" resolve="Minus" />
     <node concept="3EZMnI" id="49nnUSRZyhi" role="2wV5jI">
       <node concept="3F1sOY" id="49nnUSRZyhp" role="3EZMnx">
@@ -455,6 +448,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="49nnUSS2Cto">
+    <property role="3GE5qa" value="Value" />
     <ref role="1XX52x" to="vigk:49nnUSS2$St" resolve="ValueMultiple" />
     <node concept="3F2HdR" id="49nnUSS2Ctq" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:49nnUSS2$Sz" resolve="values" />

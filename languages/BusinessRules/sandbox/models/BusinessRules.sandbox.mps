@@ -35,10 +35,6 @@
       <concept id="739081905206934281" name="BusinessRules.structure.TestParameterValue" flags="ng" index="2TxCgq">
         <child id="6082726028770971330" name="value" index="Awa7q" />
       </concept>
-      <concept id="739081905206934321" name="BusinessRules.structure.Return5Days" flags="ng" index="2TxCgy" />
-      <concept id="739081905206934320" name="BusinessRules.structure.Return3Days" flags="ng" index="2TxCgz" />
-      <concept id="739081905206934307" name="BusinessRules.structure.Return0Days" flags="ng" index="2TxCgK" />
-      <concept id="739081905206934319" name="BusinessRules.structure.Return2Days" flags="ng" index="2TxCgW" />
       <concept id="739081905206934340" name="BusinessRules.structure.IfStatement" flags="ng" index="2TxChn">
         <child id="739081905206934356" name="comments" index="2TxCh7" />
         <child id="739081905206934363" name="ifCondition" index="2TxCh8" />
@@ -194,12 +190,17 @@
           <ref role="2TxCnG" node="59uf$wSvAFx" resolve="TreasuryBillSecurity" />
         </node>
       </node>
-      <node concept="2TxCgK" id="59uf$wSvAFT" role="2TxChK" />
+      <node concept="BqnXj" id="3ITE2gmM_hU" role="2TxChK">
+        <node concept="1Unh6N" id="3ITE2gmM_hW" role="1UngFV">
+          <node concept="Awa6H" id="3ITE2gmM_i3" role="1Unh6d">
+            <property role="Awa6z" value="0" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2TxCkf" id="59uf$wSvAF8" role="2TxCj4">
       <property role="2TxCke" value="From then until now, it is 2 days" />
     </node>
-    <node concept="2TxCgW" id="59uf$wSvT9y" role="2TxCjL" />
     <node concept="2TxChy" id="59uf$wSvAGl" role="2TxCjr">
       <node concept="2TxChn" id="59uf$wSvAGm" role="2TxChx">
         <node concept="2TxCkf" id="59uf$wSvAGn" role="2TxCh7">
@@ -213,7 +214,13 @@
             <property role="2TxCkA" value="19950607" />
           </node>
         </node>
-        <node concept="2TxCgy" id="59uf$wSvAGv" role="2TxChK" />
+        <node concept="BqnXj" id="3ITE2gmM_g6" role="2TxChK">
+          <node concept="1Unh6N" id="3ITE2gmM_g8" role="1UngFV">
+            <node concept="Awa6H" id="3ITE2gmM_gf" role="1Unh6d">
+              <property role="Awa6z" value="5" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2TxChy" id="59uf$wSvMR7" role="2TxCjr">
@@ -229,12 +236,25 @@
             <property role="2TxCkA" value="20170905" />
           </node>
         </node>
-        <node concept="2TxCgz" id="59uf$wSvMRo" role="2TxChK" />
+        <node concept="BqnXj" id="3ITE2gmM_gk" role="2TxChK">
+          <node concept="1Unh6N" id="3ITE2gmM_gm" role="1UngFV">
+            <node concept="Awa6H" id="3ITE2gmM_gt" role="1Unh6d">
+              <property role="Awa6z" value="3" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2TxCn2" id="5hEbLxMXTzm" role="AA$ev">
       <property role="TrG5h" value="Days" />
       <node concept="2TxClH" id="5hEbLxMXTzs" role="2TxCnK" />
+    </node>
+    <node concept="BqnXj" id="3ITE2gmM_gy" role="2TxCjL">
+      <node concept="1Unh6N" id="3ITE2gmM_g$" role="1UngFV">
+        <node concept="Awa6H" id="3ITE2gmM_gF" role="1Unh6d">
+          <property role="Awa6z" value="2" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2TxChB" id="49nnUSS0eOY">

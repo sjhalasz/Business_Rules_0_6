@@ -201,11 +201,6 @@
     <classNode dependClassName="BusinessRules.editor.ParameterReferenceInteger_Editor" />
     <classNode dependClassName="BusinessRules.editor.ParameterReferenceInteger_SubstituteMenu" />
     <classNode dependClassName="BusinessRules.editor.Parameter_Editor" />
-    <classNode dependClassName="BusinessRules.editor.Return0Days_Editor" />
-    <classNode dependClassName="BusinessRules.editor.Return1Day_Editor" />
-    <classNode dependClassName="BusinessRules.editor.Return2Days_Editor" />
-    <classNode dependClassName="BusinessRules.editor.Return3Days_Editor" />
-    <classNode dependClassName="BusinessRules.editor.Return5Days_Editor" />
     <classNode dependClassName="BusinessRules.editor.ReturnMultiple_Editor" />
     <classNode dependClassName="BusinessRules.editor.Rule_Editor" />
     <classNode dependClassName="BusinessRules.editor.TestParameterValue_Editor" />
@@ -628,86 +623,6 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return0Days_Editor">
-    <classNode dependClassName="BusinessRules.editor.Return0Days_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return0Days_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return1Day_Editor">
-    <classNode dependClassName="BusinessRules.editor.Return1Day_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return1Day_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return2Days_Editor">
-    <classNode dependClassName="BusinessRules.editor.Return2Days_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return2Days_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return3Days_Editor">
-    <classNode dependClassName="BusinessRules.editor.Return3Days_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return3Days_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return5Days_Editor">
-    <classNode dependClassName="BusinessRules.editor.Return5Days_EditorBuilder_a" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
-    <classNode extendsClassName="jetbrains.mps.nodeEditor.DefaultNodeEditor" />
-  </dependency>
-  <dependency className="BusinessRules.editor.Return5Days_EditorBuilder_a">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="jetbrains.mps.nodeEditor.cells.EditorCell_Constant" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.EditorContext" />
-    <classNode dependClassName="jetbrains.mps.openapi.editor.cells.EditorCell" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="jetbrains.mps.editor.runtime.descriptor.AbstractEditorBuilder" />
   </dependency>
