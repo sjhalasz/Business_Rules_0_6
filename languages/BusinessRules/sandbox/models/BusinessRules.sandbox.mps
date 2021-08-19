@@ -156,6 +156,37 @@
         </node>
       </node>
     </node>
+    <node concept="2TxCcj" id="$a17HEnqrq" role="2TxCjX">
+      <node concept="2TxCkf" id="$a17HEnqrr" role="2TxCcl">
+        <property role="2TxCke" value="This test is intentionally wrong" />
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqrs" role="2TxCcr">
+        <property role="TrG5h" value="CashClient" />
+        <node concept="Awa6K" id="$a17HEnqsb" role="Awa7q" />
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqs2" role="2TxCcr">
+        <property role="TrG5h" value="MoneyMarketSecurity" />
+        <node concept="Awa6K" id="$a17HEnqs8" role="Awa7q" />
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqse" role="2TxCcr">
+        <property role="TrG5h" value="TreasuryBillSecurity" />
+        <node concept="Awa6K" id="$a17HEnqsm" role="Awa7q" />
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqsp" role="2TxCcr">
+        <property role="TrG5h" value="TransactionDate" />
+        <node concept="Awa6H" id="$a17HEnqsz" role="Awa7q">
+          <property role="Awa6z" value="20210801" />
+        </node>
+      </node>
+      <node concept="2TxCkf" id="$a17HEnqru" role="2TxCc9">
+        <property role="2TxCke" value="Should be 2 days, but this is intentionally wrong" />
+      </node>
+      <node concept="1Unh6N" id="$a17HEnqsA" role="2TxCcK">
+        <node concept="Awa6H" id="$a17HEnqsI" role="1Unh6d">
+          <property role="Awa6z" value="0" />
+        </node>
+      </node>
+    </node>
     <node concept="2TxCn2" id="59uf$wSvAF1" role="2TxCiz">
       <property role="TrG5h" value="CashClient" />
       <node concept="2TxClR" id="59uf$wSvAFl" role="2TxCnK" />
@@ -259,6 +290,43 @@
   </node>
   <node concept="2TxChB" id="49nnUSS0eOY">
     <property role="TrG5h" value="FreeRidingViolation" />
+    <node concept="2TxCcj" id="$a17HEnqqi" role="2TxCjX">
+      <node concept="2TxCkf" id="$a17HEnqqj" role="2TxCcl">
+        <property role="2TxCke" value="Settled so cash is irrelevant, but this test is intentionally incorrect" />
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqqk" role="2TxCcr">
+        <property role="TrG5h" value="NumberOfSettlementDays" />
+        <node concept="Awa6H" id="$a17HEnqqI" role="Awa7q">
+          <property role="Awa6z" value="2" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqqL" role="2TxCcr">
+        <property role="TrG5h" value="LotDaysSincePurchase" />
+        <node concept="Awa6H" id="$a17HEnqqR" role="Awa7q">
+          <property role="Awa6z" value="2" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqqU" role="2TxCcr">
+        <property role="TrG5h" value="TransactionLotReceivablesUsed" />
+        <node concept="Awa6H" id="$a17HEnqr2" role="Awa7q">
+          <property role="Awa6z" value="100" />
+        </node>
+      </node>
+      <node concept="2TxCgq" id="$a17HEnqr5" role="2TxCcr">
+        <property role="TrG5h" value="AccountProFormaCashAvailable" />
+        <node concept="Awa6H" id="$a17HEnqrf" role="Awa7q">
+          <property role="Awa6z" value="125" />
+        </node>
+      </node>
+      <node concept="2TxCkf" id="$a17HEnqqm" role="2TxCc9">
+        <property role="2TxCke" value="Expect no violation, but this test is intentionally incorrect" />
+      </node>
+      <node concept="1Unh6N" id="$a17HEnqqn" role="2TxCcK">
+        <node concept="Awa6K" id="$a17HEnqri" role="1Unh6d">
+          <property role="Awa6Q" value="true" />
+        </node>
+      </node>
+    </node>
     <node concept="2TxCn2" id="49nnUSS0eOZ" role="AA$ev">
       <property role="TrG5h" value="Violation" />
       <node concept="2TxClR" id="49nnUSS0ePo" role="2TxCnK" />
