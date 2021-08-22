@@ -48,7 +48,7 @@
       <concept id="739081905206934058" name="BusinessRules.structure.DatePicker" flags="ng" index="2TxCkT">
         <property id="739081905206934069" name="date" index="2TxCkA" />
       </concept>
-      <concept id="739081905206934142" name="BusinessRules.structure.TypeDate" flags="ng" index="2TxClH" />
+      <concept id="739081905206934142" name="BusinessRules.structure.TypeDays" flags="ng" index="2TxClH" />
       <concept id="739081905206934116" name="BusinessRules.structure.TypeBoolean" flags="ng" index="2TxClR" />
       <concept id="739081905206934181" name="BusinessRules.structure.Any" flags="ng" index="2TxCmQ">
         <child id="739081905206934207" name="ifConditions" index="2TxCmG" />
@@ -75,6 +75,7 @@
   </registry>
   <node concept="2TxChB" id="2HmmHNV9Lgv">
     <property role="TrG5h" value="NumberOfSettlementDays" />
+    <node concept="2TxClH" id="2HmmHNVgybh" role="AA$ev" />
     <node concept="2TxChn" id="2HmmHNV9Lx3" role="2TxCiG">
       <node concept="2TxCkf" id="2HmmHNV9Lx4" role="2TxCh7">
         <property role="2TxCke" value="The following cases settle immediately" />
@@ -137,10 +138,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2TxCn2" id="2HmmHNV9Lgw" role="AA$ev">
-      <property role="TrG5h" value="Days" />
-      <node concept="2TxClH" id="2HmmHNV9Lkd" role="2TxCnK" />
     </node>
     <node concept="2TxCn2" id="2HmmHNV9Lgy" role="2TxCiz">
       <property role="TrG5h" value="CashClient" />
