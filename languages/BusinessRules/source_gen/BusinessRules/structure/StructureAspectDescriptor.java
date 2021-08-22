@@ -21,7 +21,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptDate = createDescriptorForDate();
   /*package*/ final ConceptDescriptor myConceptDatePicker = createDescriptorForDatePicker();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
-  /*package*/ final ConceptDescriptor myConceptInteger = createDescriptorForInteger();
   /*package*/ final ConceptDescriptor myConceptLessThan = createDescriptorForLessThan();
   /*package*/ final ConceptDescriptor myConceptMinus = createDescriptorForMinus();
   /*package*/ final ConceptDescriptor myConceptNotLessThan = createDescriptorForNotLessThan();
@@ -54,7 +53,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptIfStatement, myConceptInteger, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
+    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptIfStatement, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
   }
 
   @Override
@@ -77,8 +76,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptDatePicker;
       case LanguageConceptSwitch.IfStatement:
         return myConceptIfStatement;
-      case LanguageConceptSwitch.Integer:
-        return myConceptInteger;
       case LanguageConceptSwitch.LessThan:
         return myConceptLessThan;
       case LanguageConceptSwitch.Minus:
@@ -158,6 +155,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934023");
     b.version(2);
+    b.alias("status");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForComment() {
@@ -193,13 +191,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("comments", 0xa41bf13b3c73b54L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1cL).optional(false).ordered(true).multiple(true).origin("739081905206934356").done();
     b.aggregate("ifCondition", 0xa41bf13b3c73b5bL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L).optional(false).ordered(true).multiple(false).origin("739081905206934363").done();
     b.aggregate("returnExpression", 0xa41bf13b3c73b63L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f187303504bL).optional(false).ordered(true).multiple(false).origin("739081905206934371").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForInteger() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "Integer", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x546a2f18730469b1L);
-    b.class_(false, false, false);
-    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/6082726028772665777");
-    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLessThan() {

@@ -52,6 +52,7 @@
     <property role="TrG5h" value="Boolean" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="Type" />
+    <property role="34LRSv" value="status" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="D1JLeNLNCs">
@@ -419,12 +420,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="49nnUSS2$St" resolve="ValueMultiple" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="5hEbLxN16AL">
-    <property role="EcuMT" value="6082726028772665777" />
-    <property role="TrG5h" value="Integer" />
-    <property role="3GE5qa" value="Type" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="49nnUSRZygO">
     <property role="EcuMT" value="4780394731345421364" />

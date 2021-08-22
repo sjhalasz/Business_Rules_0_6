@@ -1324,6 +1324,22 @@
                   </node>
                 </node>
               </node>
+              <node concept="17Uvod" id="2HmmHNVcD1Z" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8/155656958578482948/155656958578482949" />
+                <node concept="3zFVjK" id="2HmmHNVcD22" role="3zH0cK">
+                  <node concept="3clFbS" id="2HmmHNVcD23" role="2VODD2">
+                    <node concept="3clFbF" id="2HmmHNVcD29" role="3cqZAp">
+                      <node concept="2OqwBi" id="2HmmHNVcD24" role="3clFbG">
+                        <node concept="3TrcHB" id="2HmmHNVcD27" role="2OqNvi">
+                          <ref role="3TsBF5" to="vigk:D1JLeNLNCt" resolve="commentText" />
+                        </node>
+                        <node concept="30H73N" id="2HmmHNVcD28" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

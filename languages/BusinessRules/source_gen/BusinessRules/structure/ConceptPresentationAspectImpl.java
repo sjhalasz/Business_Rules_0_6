@@ -17,7 +17,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Date;
   private ConceptPresentation props_DatePicker;
   private ConceptPresentation props_IfStatement;
-  private ConceptPresentation props_Integer;
   private ConceptPresentation props_LessThan;
   private ConceptPresentation props_Minus;
   private ConceptPresentation props_NotLessThan;
@@ -96,13 +95,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IfStatement = cpb.create();
         }
         return props_IfStatement;
-      case LanguageConceptSwitch.Integer:
-        if (props_Integer == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Integer");
-          props_Integer = cpb.create();
-        }
-        return props_Integer;
       case LanguageConceptSwitch.LessThan:
         if (props_LessThan == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
