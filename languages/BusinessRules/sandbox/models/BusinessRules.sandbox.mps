@@ -55,6 +55,7 @@
       </concept>
       <concept id="739081905206934225" name="BusinessRules.structure.Parameter" flags="ng" index="2TxCn2">
         <child id="739081905206934243" name="type" index="2TxCnK" />
+        <child id="3122783296782809148" name="userType" index="3g5mbw" />
       </concept>
       <concept id="739081905206934219" name="BusinessRules.structure.Before" flags="ng" index="2TxCno">
         <child id="739081905206934222" name="date2" index="2TxCnt" />
@@ -63,6 +64,8 @@
       <concept id="739081905206934250" name="BusinessRules.structure.ParameterReferenceBoolean" flags="ng" index="2TxCnT">
         <reference id="739081905206934271" name="parameter" index="2TxCnG" />
       </concept>
+      <concept id="3122783296782809132" name="BusinessRules.structure.UserTypeStatus" flags="ng" index="3g5mbK" />
+      <concept id="3122783296782809126" name="BusinessRules.structure.UserTypeDate" flags="ng" index="3g5mbU" />
       <concept id="4780394731346218525" name="BusinessRules.structure.ValueMultiple" flags="ng" index="1Unh6N">
         <child id="4780394731346218531" name="values" index="1Unh6d" />
       </concept>
@@ -141,18 +144,22 @@
     <node concept="2TxCn2" id="2HmmHNV9Lgy" role="2TxCiz">
       <property role="TrG5h" value="CashClient" />
       <node concept="2TxClR" id="2HmmHNV9Llx" role="2TxCnK" />
+      <node concept="3g5mbK" id="2HmmHNVh48d" role="3g5mbw" />
     </node>
     <node concept="2TxCn2" id="2HmmHNV9Lmq" role="2TxCiz">
       <property role="TrG5h" value="MoneyMarketSecurity" />
       <node concept="2TxClR" id="2HmmHNV9Lnm" role="2TxCnK" />
+      <node concept="3g5mbK" id="2HmmHNVh48f" role="3g5mbw" />
     </node>
     <node concept="2TxCn2" id="2HmmHNV9Lqm" role="2TxCiz">
       <property role="TrG5h" value="TreasuryBillSecurity" />
       <node concept="2TxClR" id="2HmmHNV9Lrk" role="2TxCnK" />
+      <node concept="3g5mbK" id="2HmmHNVh48h" role="3g5mbw" />
     </node>
     <node concept="2TxCn2" id="2HmmHNV9Ltu" role="2TxCiz">
       <property role="TrG5h" value="TransactionDate" />
       <node concept="2TxClH" id="2HmmHNV9Lu3" role="2TxCnK" />
+      <node concept="3g5mbK" id="2HmmHNVh48j" role="3g5mbw" />
     </node>
     <node concept="2TxCkf" id="2HmmHNV9Lg$" role="2TxCix">
       <property role="2TxCke" value="Number of days from contract to settlement" />
@@ -199,6 +206,7 @@
     <node concept="2TxCn2" id="2HmmHNVgNms" role="AA$ev">
       <property role="TrG5h" value="Days" />
       <node concept="2TxClH" id="2HmmHNVgNmw" role="2TxCnK" />
+      <node concept="3g5mbU" id="2HmmHNVh48l" role="3g5mbw" />
     </node>
   </node>
 </model>

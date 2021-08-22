@@ -31,6 +31,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Type;
   private ConceptPresentation props_TypeBoolean;
   private ConceptPresentation props_TypeDate;
+  private ConceptPresentation props_UserType;
+  private ConceptPresentation props_UserTypeDate;
+  private ConceptPresentation props_UserTypeStatus;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_ValueBoolean;
   private ConceptPresentation props_ValueInteger;
@@ -192,6 +195,26 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TypeDate = cpb.create();
         }
         return props_TypeDate;
+      case LanguageConceptSwitch.UserType:
+        if (props_UserType == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_UserType = cpb.create();
+        }
+        return props_UserType;
+      case LanguageConceptSwitch.UserTypeDate:
+        if (props_UserTypeDate == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("date");
+          props_UserTypeDate = cpb.create();
+        }
+        return props_UserTypeDate;
+      case LanguageConceptSwitch.UserTypeStatus:
+        if (props_UserTypeStatus == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("status");
+          props_UserTypeStatus = cpb.create();
+        }
+        return props_UserTypeStatus;
       case LanguageConceptSwitch.Value:
         if (props_Value == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

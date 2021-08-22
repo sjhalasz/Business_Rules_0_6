@@ -153,11 +153,11 @@
     <property role="3GE5qa" value="Parameter" />
     <ref role="1XX52x" to="vigk:D1JLeNLNFh" resolve="Parameter" />
     <node concept="3EZMnI" id="D1JLeNMc21" role="2wV5jI">
-      <node concept="3F1sOY" id="D1JLeNMc2d" role="3EZMnx">
-        <ref role="1NtTu8" to="vigk:D1JLeNLNFz" resolve="type" />
-      </node>
       <node concept="3F0A7n" id="D1JLeNMc2j" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F1sOY" id="2HmmHNVgNx2" role="3EZMnx">
+        <ref role="1NtTu8" to="vigk:2HmmHNVgNwW" resolve="userType" />
       </node>
       <node concept="l2Vlx" id="D1JLeNMc24" role="2iSdaV" />
     </node>
@@ -432,6 +432,20 @@
     <node concept="3F2HdR" id="49nnUSS2Ctq" role="2wV5jI">
       <ref role="1NtTu8" to="vigk:49nnUSS2$Sz" resolve="values" />
       <node concept="2iRkQZ" id="49nnUSS2Cts" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2HmmHNVgNxi">
+    <property role="3GE5qa" value="Type" />
+    <ref role="1XX52x" to="vigk:2HmmHNVgNwA" resolve="UserTypeDate" />
+    <node concept="PMmxH" id="2HmmHNVgNxk" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2HmmHNVgNxy">
+    <property role="3GE5qa" value="Type" />
+    <ref role="1XX52x" to="vigk:2HmmHNVgNwG" resolve="UserTypeStatus" />
+    <node concept="PMmxH" id="2HmmHNVgNx$" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
     </node>
   </node>
 </model>

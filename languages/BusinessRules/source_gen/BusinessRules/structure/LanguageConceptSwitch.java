@@ -31,10 +31,13 @@ public final class LanguageConceptSwitch {
   public static final int Type = 19;
   public static final int TypeBoolean = 20;
   public static final int TypeDate = 21;
-  public static final int Value = 22;
-  public static final int ValueBoolean = 23;
-  public static final int ValueInteger = 24;
-  public static final int ValueMultiple = 25;
+  public static final int UserType = 22;
+  public static final int UserTypeDate = 23;
+  public static final int UserTypeStatus = 24;
+  public static final int Value = 25;
+  public static final int ValueBoolean = 26;
+  public static final int ValueInteger = 27;
+  public static final int ValueMultiple = 28;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xb885910aced43e1L, 0x8b6d9840b91c1156L);
@@ -60,6 +63,9 @@ public final class LanguageConceptSwitch {
     builder.put(0xa41bf13b3c73a59L, Type);
     builder.put(0xa41bf13b3c73a64L, TypeBoolean);
     builder.put(0xa41bf13b3c73a7eL, TypeDate);
+    builder.put(0x2b565adcfb433820L, UserType);
+    builder.put(0x2b565adcfb433826L, UserTypeDate);
+    builder.put(0x2b565adcfb43382cL, UserTypeStatus);
     builder.put(0x546a2f1872e9b1b8L, Value);
     builder.put(0x546a2f1872ea8ea8L, ValueBoolean);
     builder.put(0x546a2f1872ea8eb5L, ValueInteger);

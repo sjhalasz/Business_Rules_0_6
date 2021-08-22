@@ -151,6 +151,13 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="D1JLeNLNDp" resolve="Type" />
     </node>
+    <node concept="1TJgyj" id="2HmmHNVgNwW" role="1TKVEi">
+      <property role="IQ2ns" value="3122783296782809148" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="userType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2HmmHNVgNww" resolve="UserType" />
+    </node>
     <node concept="PrWs8" id="$a17HEnvY_" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
@@ -454,6 +461,27 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="5hEbLxMUr6S" resolve="Value" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2HmmHNVgNww">
+    <property role="EcuMT" value="3122783296782809120" />
+    <property role="3GE5qa" value="Type" />
+    <property role="TrG5h" value="UserType" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="2HmmHNVgNwA">
+    <property role="EcuMT" value="3122783296782809126" />
+    <property role="3GE5qa" value="Type" />
+    <property role="TrG5h" value="UserTypeDate" />
+    <property role="34LRSv" value="date" />
+    <ref role="1TJDcQ" node="2HmmHNVgNww" resolve="UserType" />
+  </node>
+  <node concept="1TIwiD" id="2HmmHNVgNwG">
+    <property role="EcuMT" value="3122783296782809132" />
+    <property role="3GE5qa" value="Type" />
+    <property role="TrG5h" value="UserTypeStatus" />
+    <property role="34LRSv" value="status" />
+    <ref role="1TJDcQ" node="2HmmHNVgNww" resolve="UserType" />
   </node>
 </model>
 

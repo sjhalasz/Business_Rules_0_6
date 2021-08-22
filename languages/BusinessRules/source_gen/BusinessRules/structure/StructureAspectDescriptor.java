@@ -35,6 +35,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptType = createDescriptorForType();
   /*package*/ final ConceptDescriptor myConceptTypeBoolean = createDescriptorForTypeBoolean();
   /*package*/ final ConceptDescriptor myConceptTypeDate = createDescriptorForTypeDate();
+  /*package*/ final ConceptDescriptor myConceptUserType = createDescriptorForUserType();
+  /*package*/ final ConceptDescriptor myConceptUserTypeDate = createDescriptorForUserTypeDate();
+  /*package*/ final ConceptDescriptor myConceptUserTypeStatus = createDescriptorForUserTypeStatus();
   /*package*/ final ConceptDescriptor myConceptValue = createDescriptorForValue();
   /*package*/ final ConceptDescriptor myConceptValueBoolean = createDescriptorForValueBoolean();
   /*package*/ final ConceptDescriptor myConceptValueInteger = createDescriptorForValueInteger();
@@ -53,7 +56,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptIfStatement, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
+    return Arrays.asList(myConceptAll, myConceptAny, myConceptBefore, myConceptBoolean, myConceptComment, myConceptDate, myConceptDatePicker, myConceptIfStatement, myConceptLessThan, myConceptMinus, myConceptNotLessThan, myConceptParameter, myConceptParameterReferenceBoolean, myConceptParameterReferenceDate, myConceptParameterReferenceInteger, myConceptReturnMultiple, myConceptRule, myConceptTest, myConceptTestParameterValue, myConceptType, myConceptTypeBoolean, myConceptTypeDate, myConceptUserType, myConceptUserTypeDate, myConceptUserTypeStatus, myConceptValue, myConceptValueBoolean, myConceptValueInteger, myConceptValueMultiple);
   }
 
   @Override
@@ -104,6 +107,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTypeBoolean;
       case LanguageConceptSwitch.TypeDate:
         return myConceptTypeDate;
+      case LanguageConceptSwitch.UserType:
+        return myConceptUserType;
+      case LanguageConceptSwitch.UserTypeDate:
+        return myConceptUserTypeDate;
+      case LanguageConceptSwitch.UserTypeStatus:
+        return myConceptUserTypeStatus;
       case LanguageConceptSwitch.Value:
         return myConceptValue;
       case LanguageConceptSwitch.ValueBoolean:
@@ -231,6 +240,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934225");
     b.version(2);
     b.aggregate("type", 0xa41bf13b3c73ae3L).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a59L).optional(false).ordered(true).multiple(false).origin("739081905206934243").done();
+    b.aggregate("userType", 0x2b565adcfb43383cL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb433820L).optional(false).ordered(true).multiple(false).origin("3122783296782809148").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForParameterReferenceBoolean() {
@@ -327,6 +337,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/739081905206934142");
     b.version(2);
     b.alias("int");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUserType() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "UserType", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb433820L);
+    b.class_(false, true, false);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/3122783296782809120");
+    b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUserTypeDate() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "UserTypeDate", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb433826L);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.UserType", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb433820L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/3122783296782809126");
+    b.version(2);
+    b.alias("date");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUserTypeStatus() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("BusinessRules", "UserTypeStatus", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb43382cL);
+    b.class_(false, false, false);
+    b.super_("BusinessRules.structure.UserType", 0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0x2b565adcfb433820L);
+    b.origin("r:c8a36848-88f9-4c4d-b069-35490b489078(BusinessRules.structure)/3122783296782809132");
+    b.version(2);
+    b.alias("status");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForValue() {
