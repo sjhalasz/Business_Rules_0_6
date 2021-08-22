@@ -148,6 +148,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("date1", 0xa41bf13b3c73accL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1fL).optional(false).ordered(true).multiple(false).origin("739081905206934220").done();
     b.aggregate("date2", 0xa41bf13b3c73aceL).target(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a1fL).optional(false).ordered(true).multiple(false).origin("739081905206934222").done();
+    b.alias("is before");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForBoolean() {

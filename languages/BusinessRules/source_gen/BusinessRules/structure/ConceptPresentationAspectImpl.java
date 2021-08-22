@@ -58,7 +58,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Before:
         if (props_Before == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Before");
+          cpb.rawPresentation("is before");
           props_Before = cpb.create();
         }
         return props_Before;

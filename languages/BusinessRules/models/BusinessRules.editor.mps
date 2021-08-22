@@ -83,8 +83,8 @@
       <node concept="3F1sOY" id="D1JLeNMaqn" role="3EZMnx">
         <ref role="1NtTu8" to="vigk:D1JLeNLNFc" resolve="date1" />
       </node>
-      <node concept="3F0ifn" id="D1JLeNMaqt" role="3EZMnx">
-        <property role="3F0ifm" value="before" />
+      <node concept="PMmxH" id="2HmmHNVgynd" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       </node>
       <node concept="3F1sOY" id="D1JLeNMaq_" role="3EZMnx">
         <ref role="1NtTu8" to="vigk:D1JLeNLNFe" resolve="date2" />
