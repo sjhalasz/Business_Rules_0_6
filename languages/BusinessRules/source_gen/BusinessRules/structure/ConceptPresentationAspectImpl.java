@@ -16,7 +16,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Comment;
   private ConceptPresentation props_Date;
   private ConceptPresentation props_DatePicker;
-  private ConceptPresentation props_ElseStatement;
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_Integer;
   private ConceptPresentation props_LessThan;
@@ -26,7 +25,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ParameterReferenceBoolean;
   private ConceptPresentation props_ParameterReferenceDate;
   private ConceptPresentation props_ParameterReferenceInteger;
-  private ConceptPresentation props_ReturnExpression;
   private ConceptPresentation props_ReturnMultiple;
   private ConceptPresentation props_Rule;
   private ConceptPresentation props_Test;
@@ -91,13 +89,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DatePicker = cpb.create();
         }
         return props_DatePicker;
-      case LanguageConceptSwitch.ElseStatement:
-        if (props_ElseStatement == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ElseStatement");
-          props_ElseStatement = cpb.create();
-        }
-        return props_ElseStatement;
       case LanguageConceptSwitch.IfStatement:
         if (props_IfStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -161,12 +152,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ParameterReferenceInteger = cpb.create();
         }
         return props_ParameterReferenceInteger;
-      case LanguageConceptSwitch.ReturnExpression:
-        if (props_ReturnExpression == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ReturnExpression = cpb.create();
-        }
-        return props_ReturnExpression;
       case LanguageConceptSwitch.ReturnMultiple:
         if (props_ReturnMultiple == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

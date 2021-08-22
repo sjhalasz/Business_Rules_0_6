@@ -16,13 +16,6 @@
       <concept id="6082726028772593739" name="BusinessRules.structure.ReturnMultiple" flags="ng" index="BqnXj">
         <child id="4780394731346220373" name="values" index="1UngFV" />
       </concept>
-      <concept id="6082726028772392418" name="BusinessRules.structure.ParameterReferenceInteger" flags="ng" index="BqxbU">
-        <reference id="6082726028772392515" name="parameter" index="Bqx5r" />
-      </concept>
-      <concept id="6082726028772465646" name="BusinessRules.structure.NotLessThan" flags="ng" index="BqRjQ">
-        <child id="6082726028772465733" name="left" index="BqRdt" />
-        <child id="6082726028772465789" name="right" index="BqRd_" />
-      </concept>
       <concept id="739081905206934528" name="BusinessRules.structure.Test" flags="ng" index="2TxCcj">
         <child id="739081905206934554" name="returnComments" index="2TxCc9" />
         <child id="739081905206934534" name="parameterComments" index="2TxCcl" />
@@ -40,16 +33,12 @@
         <child id="739081905206934363" name="ifCondition" index="2TxCh8" />
         <child id="739081905206934371" name="returnExpression" index="2TxChK" />
       </concept>
-      <concept id="739081905206934385" name="BusinessRules.structure.ElseStatement" flags="ng" index="2TxChy">
-        <child id="739081905206934386" name="ifStatement" index="2TxChx" />
-      </concept>
       <concept id="739081905206934388" name="BusinessRules.structure.Rule" flags="ng" index="2TxChB">
         <child id="6082726028771355783" name="returnType" index="AA$ev" />
         <child id="739081905206934450" name="comments" index="2TxCix" />
         <child id="739081905206934448" name="parameters" index="2TxCiz" />
-        <child id="739081905206934463" name="ifStatement" index="2TxCiG" />
+        <child id="739081905206934463" name="ifStatements" index="2TxCiG" />
         <child id="739081905206934487" name="defaultComments" index="2TxCj4" />
-        <child id="739081905206934472" name="elseStatements" index="2TxCjr" />
         <child id="739081905206934498" name="defaultReturn" index="2TxCjL" />
         <child id="739081905206934510" name="unitTests" index="2TxCjX" />
       </concept>
@@ -74,10 +63,6 @@
       <concept id="739081905206934250" name="BusinessRules.structure.ParameterReferenceBoolean" flags="ng" index="2TxCnT">
         <reference id="739081905206934271" name="parameter" index="2TxCnG" />
       </concept>
-      <concept id="4780394731345421364" name="BusinessRules.structure.Minus" flags="ng" index="1PEnIq">
-        <child id="4780394731345421372" name="right" index="1PEnIi" />
-        <child id="4780394731345421370" name="left" index="1PEnIk" />
-      </concept>
       <concept id="4780394731346218525" name="BusinessRules.structure.ValueMultiple" flags="ng" index="1Unh6N">
         <child id="4780394731346218531" name="values" index="1Unh6d" />
       </concept>
@@ -88,353 +73,130 @@
       </concept>
     </language>
   </registry>
-  <node concept="2TxChB" id="59uf$wSvAF0">
+  <node concept="2TxChB" id="2HmmHNV9Lgv">
     <property role="TrG5h" value="NumberOfSettlementDays" />
-    <node concept="2TxCcj" id="5hEbLxMURMq" role="2TxCjX">
-      <node concept="2TxCkf" id="5hEbLxMURNc" role="2TxCc9">
-        <property role="2TxCke" value="... is 0 days" />
-      </node>
-      <node concept="2TxCkf" id="5hEbLxMURMr" role="2TxCcl">
-        <property role="2TxCke" value="If CashClient, regardless of other parameters..." />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURMs" role="2TxCcr">
-        <property role="TrG5h" value="CashClient" />
-        <node concept="Awa6K" id="5hEbLxMURML" role="Awa7q">
-          <property role="Awa6Q" value="true" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURMC" role="2TxCcr">
-        <property role="TrG5h" value="MoneyMarketSecurity" />
-        <node concept="Awa6K" id="5hEbLxMURMI" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURMO" role="2TxCcr">
-        <property role="TrG5h" value="TreasuryBillSecurity" />
-        <node concept="Awa6K" id="5hEbLxMURMW" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURMZ" role="2TxCcr">
-        <property role="TrG5h" value="TransactionDate" />
-        <node concept="Awa6H" id="5hEbLxMURN9" role="Awa7q">
-          <property role="Awa6z" value="20210801" />
-        </node>
-      </node>
-      <node concept="1Unh6N" id="6TYbYUaJKiB" role="2TxCcK">
-        <node concept="Awa6H" id="6TYbYUaJKj6" role="1Unh6d">
-          <property role="Awa6z" value="0" />
-        </node>
-      </node>
-    </node>
-    <node concept="2TxCcj" id="5hEbLxMURNh" role="2TxCjX">
-      <node concept="2TxCkf" id="5hEbLxMURNi" role="2TxCcl">
-        <property role="2TxCke" value="If MoneyMarketSecurity, regardless of other parameters..." />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURNj" role="2TxCcr">
-        <property role="TrG5h" value="CashClient" />
-        <node concept="Awa6K" id="5hEbLxMURNP" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURNG" role="2TxCcr">
-        <property role="TrG5h" value="MoneyMarketSecurity" />
-        <node concept="Awa6K" id="5hEbLxMURNM" role="Awa7q">
-          <property role="Awa6Q" value="true" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURNS" role="2TxCcr">
-        <property role="TrG5h" value="TreasuryBillSecurity" />
-        <node concept="Awa6K" id="5hEbLxMURO0" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="5hEbLxMURO3" role="2TxCcr">
-        <property role="TrG5h" value="TransactionDate" />
-        <node concept="Awa6H" id="5hEbLxMUROd" role="Awa7q">
-          <property role="Awa6z" value="20210801" />
-        </node>
-      </node>
-      <node concept="2TxCkf" id="5hEbLxMURNl" role="2TxCc9">
-        <property role="2TxCke" value="... is 0 days" />
-      </node>
-      <node concept="1Unh6N" id="6TYbYUaJKkT" role="2TxCcK">
-        <node concept="Awa6H" id="6TYbYUaJKlo" role="1Unh6d">
-          <property role="Awa6z" value="0" />
-        </node>
-      </node>
-    </node>
-    <node concept="2TxCcj" id="$a17HEnqrq" role="2TxCjX">
-      <node concept="2TxCkf" id="$a17HEnqrr" role="2TxCcl">
-        <property role="2TxCke" value="This test is intentionally wrong" />
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqrs" role="2TxCcr">
-        <property role="TrG5h" value="CashClient" />
-        <node concept="Awa6K" id="$a17HEnqsb" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqs2" role="2TxCcr">
-        <property role="TrG5h" value="MoneyMarketSecurity" />
-        <node concept="Awa6K" id="$a17HEnqs8" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqse" role="2TxCcr">
-        <property role="TrG5h" value="TreasuryBillSecurity" />
-        <node concept="Awa6K" id="$a17HEnqsm" role="Awa7q" />
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqsp" role="2TxCcr">
-        <property role="TrG5h" value="TransactionDate" />
-        <node concept="Awa6H" id="$a17HEnqsz" role="Awa7q">
-          <property role="Awa6z" value="20210801" />
-        </node>
-      </node>
-      <node concept="2TxCkf" id="$a17HEnqru" role="2TxCc9">
-        <property role="2TxCke" value="Should be 2 days, but this is intentionally wrong" />
-      </node>
-      <node concept="1Unh6N" id="$a17HEnqsA" role="2TxCcK">
-        <node concept="Awa6H" id="$a17HEnqsI" role="1Unh6d">
-          <property role="Awa6z" value="0" />
-        </node>
-      </node>
-    </node>
-    <node concept="2TxCn2" id="59uf$wSvAF1" role="2TxCiz">
-      <property role="TrG5h" value="CashClient" />
-      <node concept="2TxClR" id="59uf$wSvAFl" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="59uf$wSvAFo" role="2TxCiz">
-      <property role="TrG5h" value="MoneyMarketSecurity" />
-      <node concept="2TxClR" id="59uf$wSvAFu" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="59uf$wSvAFx" role="2TxCiz">
-      <property role="TrG5h" value="TreasuryBillSecurity" />
-      <node concept="2TxClR" id="59uf$wSvAFD" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="59uf$wSvAFG" role="2TxCiz">
-      <property role="TrG5h" value="TransactionDate" />
-      <node concept="2TxClH" id="59uf$wSvAFQ" role="2TxCnK" />
-    </node>
-    <node concept="2TxCkf" id="59uf$wSvAF3" role="2TxCix">
-      <property role="2TxCke" value="Number of days from contract to settlement" />
-    </node>
-    <node concept="2TxChn" id="59uf$wSvAF4" role="2TxCiG">
-      <node concept="2TxCkf" id="59uf$wSvAF5" role="2TxCh7">
+    <node concept="2TxChn" id="2HmmHNV9Lx3" role="2TxCiG">
+      <node concept="2TxCkf" id="2HmmHNV9Lx4" role="2TxCh7">
         <property role="2TxCke" value="The following cases settle immediately" />
       </node>
-      <node concept="2TxCmQ" id="59uf$wSvAFW" role="2TxCh8">
-        <node concept="2TxCnT" id="59uf$wSvAG2" role="2TxCmG">
-          <ref role="2TxCnG" node="59uf$wSvAF1" resolve="CashClient" />
+      <node concept="2TxCmQ" id="2HmmHNV9Lyz" role="2TxCh8">
+        <node concept="2TxCnT" id="2HmmHNV9Lz4" role="2TxCmG">
+          <ref role="2TxCnG" node="2HmmHNV9Lgy" resolve="CashClient" />
         </node>
-        <node concept="2TxCnT" id="59uf$wSvAG8" role="2TxCmG">
-          <ref role="2TxCnG" node="59uf$wSvAFo" resolve="MoneyMarketSecurity" />
+        <node concept="2TxCnT" id="2HmmHNV9L$I" role="2TxCmG">
+          <ref role="2TxCnG" node="2HmmHNV9Lmq" resolve="MoneyMarketSecurity" />
         </node>
-        <node concept="2TxCnT" id="59uf$wSvAGg" role="2TxCmG">
-          <ref role="2TxCnG" node="59uf$wSvAFx" resolve="TreasuryBillSecurity" />
+        <node concept="2TxCnT" id="2HmmHNV9L_G" role="2TxCmG">
+          <ref role="2TxCnG" node="2HmmHNV9Lqm" resolve="TreasuryBillSecurity" />
         </node>
       </node>
-      <node concept="BqnXj" id="3ITE2gmM_hU" role="2TxChK">
-        <node concept="1Unh6N" id="3ITE2gmM_hW" role="1UngFV">
-          <node concept="Awa6H" id="3ITE2gmM_i3" role="1Unh6d">
+      <node concept="BqnXj" id="2HmmHNV9Lx6" role="2TxChK">
+        <node concept="1Unh6N" id="2HmmHNV9Lx7" role="1UngFV">
+          <node concept="Awa6H" id="2HmmHNV9LxE" role="1Unh6d">
             <property role="Awa6z" value="0" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2TxCkf" id="59uf$wSvAF8" role="2TxCj4">
-      <property role="2TxCke" value="From then until now, it is 2 days" />
-    </node>
-    <node concept="2TxChy" id="59uf$wSvAGl" role="2TxCjr">
-      <node concept="2TxChn" id="59uf$wSvAGm" role="2TxChx">
-        <node concept="2TxCkf" id="59uf$wSvAGn" role="2TxCh7">
-          <property role="2TxCke" value="In other cases, until June 7, 1995, it was 5 days" />
+    <node concept="2TxChn" id="2HmmHNV9Lzy" role="2TxCiG">
+      <node concept="2TxCkf" id="2HmmHNV9Lzz" role="2TxCh7">
+        <property role="2TxCke" value="In other coases, until June 7, 1995, it was 5 days" />
+      </node>
+      <node concept="2TxCno" id="2HmmHNV9LCX" role="2TxCh8">
+        <node concept="2TxCgi" id="2HmmHNV9LDx" role="2TxCnv">
+          <ref role="2TxCgk" node="2HmmHNV9Ltu" resolve="TransactionDate" />
         </node>
-        <node concept="2TxCno" id="59uf$wSvAGy" role="2TxCh8">
-          <node concept="2TxCgi" id="59uf$wSvAGF" role="2TxCnv">
-            <ref role="2TxCgk" node="59uf$wSvAFG" resolve="TransactionDate" />
-          </node>
-          <node concept="2TxCkT" id="59uf$wSvGJy" role="2TxCnt">
-            <property role="2TxCkA" value="19950607" />
-          </node>
+        <node concept="2TxCkT" id="2HmmHNV9LIC" role="2TxCnt">
+          <property role="2TxCkA" value="19950607" />
         </node>
-        <node concept="BqnXj" id="3ITE2gmM_g6" role="2TxChK">
-          <node concept="1Unh6N" id="3ITE2gmM_g8" role="1UngFV">
-            <node concept="Awa6H" id="3ITE2gmM_gf" role="1Unh6d">
-              <property role="Awa6z" value="5" />
-            </node>
+      </node>
+      <node concept="BqnXj" id="2HmmHNV9Lz_" role="2TxChK">
+        <node concept="1Unh6N" id="2HmmHNV9LzA" role="1UngFV">
+          <node concept="Awa6H" id="2HmmHNV9LC4" role="1Unh6d">
+            <property role="Awa6z" value="5" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2TxChy" id="59uf$wSvMR7" role="2TxCjr">
-      <node concept="2TxChn" id="59uf$wSvMR8" role="2TxChx">
-        <node concept="2TxCkf" id="59uf$wSvMR9" role="2TxCh7">
-          <property role="2TxCke" value="From then until September 5, 2017 it was 3 days" />
+    <node concept="2TxChn" id="2HmmHNV9LLF" role="2TxCiG">
+      <node concept="2TxCkf" id="2HmmHNV9LLG" role="2TxCh7">
+        <property role="2TxCke" value="From then until September 5, 2017 it was 3 days" />
+      </node>
+      <node concept="2TxCno" id="2HmmHNV9LNs" role="2TxCh8">
+        <node concept="2TxCgi" id="2HmmHNV9LO0" role="2TxCnv">
+          <ref role="2TxCgk" node="2HmmHNV9Ltu" resolve="TransactionDate" />
         </node>
-        <node concept="2TxCno" id="59uf$wSvMRr" role="2TxCh8">
-          <node concept="2TxCgi" id="59uf$wSvMR$" role="2TxCnv">
-            <ref role="2TxCgk" node="59uf$wSvAFG" resolve="TransactionDate" />
-          </node>
-          <node concept="2TxCkT" id="59uf$wSvMRB" role="2TxCnt">
-            <property role="2TxCkA" value="20170905" />
-          </node>
+        <node concept="2TxCkT" id="2HmmHNV9LOu" role="2TxCnt">
+          <property role="2TxCkA" value="20170905" />
         </node>
-        <node concept="BqnXj" id="3ITE2gmM_gk" role="2TxChK">
-          <node concept="1Unh6N" id="3ITE2gmM_gm" role="1UngFV">
-            <node concept="Awa6H" id="3ITE2gmM_gt" role="1Unh6d">
-              <property role="Awa6z" value="3" />
-            </node>
+      </node>
+      <node concept="BqnXj" id="2HmmHNV9LLI" role="2TxChK">
+        <node concept="1Unh6N" id="2HmmHNV9LLJ" role="1UngFV">
+          <node concept="Awa6H" id="2HmmHNV9LMz" role="1Unh6d">
+            <property role="Awa6z" value="3" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2TxCn2" id="5hEbLxMXTzm" role="AA$ev">
+    <node concept="2TxCn2" id="2HmmHNV9Lgw" role="AA$ev">
       <property role="TrG5h" value="Days" />
-      <node concept="2TxClH" id="5hEbLxMXTzs" role="2TxCnK" />
+      <node concept="2TxClH" id="2HmmHNV9Lkd" role="2TxCnK" />
     </node>
-    <node concept="BqnXj" id="3ITE2gmM_gy" role="2TxCjL">
-      <node concept="1Unh6N" id="3ITE2gmM_g$" role="1UngFV">
-        <node concept="Awa6H" id="3ITE2gmM_gF" role="1Unh6d">
+    <node concept="2TxCn2" id="2HmmHNV9Lgy" role="2TxCiz">
+      <property role="TrG5h" value="CashClient" />
+      <node concept="2TxClR" id="2HmmHNV9Llx" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="2HmmHNV9Lmq" role="2TxCiz">
+      <property role="TrG5h" value="MoneyMarketSecurity" />
+      <node concept="2TxClR" id="2HmmHNV9Lnm" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="2HmmHNV9Lqm" role="2TxCiz">
+      <property role="TrG5h" value="TreasuryBillSecurity" />
+      <node concept="2TxClR" id="2HmmHNV9Lrk" role="2TxCnK" />
+    </node>
+    <node concept="2TxCn2" id="2HmmHNV9Ltu" role="2TxCiz">
+      <property role="TrG5h" value="TransactionDate" />
+      <node concept="2TxClH" id="2HmmHNV9Lu3" role="2TxCnK" />
+    </node>
+    <node concept="2TxCkf" id="2HmmHNV9Lg$" role="2TxCix">
+      <property role="2TxCke" value="Number of days from contract to settlement" />
+    </node>
+    <node concept="2TxCkf" id="2HmmHNV9Lg_" role="2TxCj4">
+      <property role="2TxCke" value="From then to now it is 2 days" />
+    </node>
+    <node concept="BqnXj" id="2HmmHNV9LgA" role="2TxCjL">
+      <node concept="1Unh6N" id="2HmmHNV9LgB" role="1UngFV">
+        <node concept="Awa6H" id="2HmmHNV9LKn" role="1Unh6d">
           <property role="Awa6z" value="2" />
         </node>
       </node>
     </node>
-  </node>
-  <node concept="2TxChB" id="49nnUSS0eOY">
-    <property role="TrG5h" value="FreeRidingViolation" />
-    <node concept="2TxCcj" id="$a17HEnqqi" role="2TxCjX">
-      <node concept="2TxCkf" id="$a17HEnqqj" role="2TxCcl">
-        <property role="2TxCke" value="Settled so cash is irrelevant, but this test is intentionally incorrect" />
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqqk" role="2TxCcr">
-        <property role="TrG5h" value="NumberOfSettlementDays" />
-        <node concept="Awa6H" id="$a17HEnqqI" role="Awa7q">
-          <property role="Awa6z" value="2" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqqL" role="2TxCcr">
-        <property role="TrG5h" value="LotDaysSincePurchase" />
-        <node concept="Awa6H" id="$a17HEnqqR" role="Awa7q">
-          <property role="Awa6z" value="2" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqqU" role="2TxCcr">
-        <property role="TrG5h" value="TransactionLotReceivablesUsed" />
-        <node concept="Awa6H" id="$a17HEnqr2" role="Awa7q">
-          <property role="Awa6z" value="100" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="$a17HEnqr5" role="2TxCcr">
-        <property role="TrG5h" value="AccountProFormaCashAvailable" />
-        <node concept="Awa6H" id="$a17HEnqrf" role="Awa7q">
-          <property role="Awa6z" value="125" />
-        </node>
-      </node>
-      <node concept="2TxCkf" id="$a17HEnqqm" role="2TxCc9">
-        <property role="2TxCke" value="Expect no violation, but this test is intentionally incorrect" />
-      </node>
-      <node concept="1Unh6N" id="$a17HEnqqn" role="2TxCcK">
-        <node concept="Awa6K" id="$a17HEnqri" role="1Unh6d">
+    <node concept="2TxCcj" id="2HmmHNV9LgD" role="2TxCjX">
+      <node concept="2TxCkf" id="2HmmHNV9LgE" role="2TxCcl" />
+      <node concept="2TxCgq" id="2HmmHNV9LgF" role="2TxCcr">
+        <property role="TrG5h" value="CashClient" />
+        <node concept="Awa6K" id="2HmmHNV9LUW" role="Awa7q">
           <property role="Awa6Q" value="true" />
         </node>
       </node>
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0eOZ" role="AA$ev">
-      <property role="TrG5h" value="Violation" />
-      <node concept="2TxClR" id="49nnUSS0ePo" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0ePr" role="AA$ev">
-      <property role="TrG5h" value="NewAccountProFormaCashAvailable" />
-      <node concept="2TxClH" id="49nnUSS0ePx" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0eP1" role="2TxCiz">
-      <property role="TrG5h" value="NumberOfSettlementDays" />
-      <node concept="2TxClH" id="49nnUSS0ePI" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0ePL" role="2TxCiz">
-      <property role="TrG5h" value="LotDaysSincePurchase" />
-      <node concept="2TxClH" id="49nnUSS0ePW" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0ePZ" role="2TxCiz">
-      <property role="TrG5h" value="TransactionLotReceivablesUsed" />
-      <node concept="2TxClH" id="49nnUSS0eQc" role="2TxCnK" />
-    </node>
-    <node concept="2TxCn2" id="49nnUSS0eQf" role="2TxCiz">
-      <property role="TrG5h" value="AccountProFormaCashAvailable" />
-      <node concept="2TxClH" id="49nnUSS0eQu" role="2TxCnK" />
-    </node>
-    <node concept="2TxCkf" id="49nnUSS0eP3" role="2TxCix">
-      <property role="2TxCke" value="Free Riding Violation test and update of cash available" />
-    </node>
-    <node concept="2TxChn" id="49nnUSS0eP4" role="2TxCiG">
-      <node concept="2TxCkf" id="49nnUSS0eP5" role="2TxCh7">
-        <property role="2TxCke" value="If settled or sufficient cash to fund purchase" />
+      <node concept="2TxCgq" id="2HmmHNV9LUr" role="2TxCcr">
+        <property role="TrG5h" value="MoneyMarketSecurity" />
+        <node concept="Awa6K" id="2HmmHNV9M2i" role="Awa7q" />
       </node>
-      <node concept="2TxCmQ" id="49nnUSS0TZi" role="2TxCh8">
-        <node concept="BqRjQ" id="49nnUSS0TZo" role="2TxCmG">
-          <node concept="BqxbU" id="49nnUSS0TZx" role="BqRdt">
-            <ref role="Bqx5r" node="49nnUSS0ePL" resolve="LotDaysSincePurchase" />
-          </node>
-          <node concept="BqxbU" id="49nnUSS0TZ$" role="BqRd_">
-            <ref role="Bqx5r" node="49nnUSS0eP1" resolve="NumberOfSettlementDays" />
-          </node>
-        </node>
-        <node concept="BqRjQ" id="49nnUSS0U1x" role="2TxCmG">
-          <node concept="BqxbU" id="49nnUSS0U1K" role="BqRd_">
-            <ref role="Bqx5r" node="49nnUSS0ePZ" resolve="TransactionLotReceivablesUsed" />
-          </node>
-          <node concept="BqxbU" id="49nnUSS1LFq" role="BqRdt">
-            <ref role="Bqx5r" node="49nnUSS0eQf" resolve="AccountProFormaCashAvailable" />
-          </node>
+      <node concept="2TxCgq" id="2HmmHNV9M1J" role="2TxCcr">
+        <property role="TrG5h" value="TreasuryBillSecurity" />
+        <node concept="Awa6K" id="2HmmHNV9M5H" role="Awa7q" />
+      </node>
+      <node concept="2TxCgq" id="2HmmHNV9M6b" role="2TxCcr">
+        <property role="TrG5h" value="TransactionDate" />
+        <node concept="Awa6H" id="2HmmHNV9M8R" role="Awa7q">
+          <property role="Awa6z" value="20210801" />
         </node>
       </node>
-      <node concept="BqnXj" id="49nnUSS2RnJ" role="2TxChK">
-        <node concept="1Unh6N" id="49nnUSS2RnL" role="1UngFV">
-          <node concept="Awa6K" id="49nnUSS2RnS" role="1Unh6d" />
-          <node concept="1PEnIq" id="49nnUSS2RnY" role="1Unh6d">
-            <node concept="BqxbU" id="49nnUSS2Ro8" role="1PEnIk">
-              <ref role="Bqx5r" node="49nnUSS0eQf" resolve="AccountProFormaCashAvailable" />
-            </node>
-            <node concept="BqxbU" id="49nnUSS2Rob" role="1PEnIi">
-              <ref role="Bqx5r" node="49nnUSS0ePZ" resolve="TransactionLotReceivablesUsed" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2TxCkf" id="49nnUSS0eP8" role="2TxCj4">
-      <property role="2TxCke" value="Otherwise, report violation" />
-    </node>
-    <node concept="2TxCcj" id="49nnUSS0ePa" role="2TxCjX">
-      <node concept="2TxCkf" id="49nnUSS0ePb" role="2TxCcl">
-        <property role="2TxCke" value="Not settled but sufficient cash to fund purchase" />
-      </node>
-      <node concept="2TxCgq" id="49nnUSS0ePc" role="2TxCcr">
-        <property role="TrG5h" value="NumberOfSettlementDays" />
-        <node concept="Awa6H" id="49nnUSS0U05" role="Awa7q">
-          <property role="Awa6z" value="2" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="49nnUSS0TZX" role="2TxCcr">
-        <property role="TrG5h" value="LotDaysSincePurchase" />
-        <node concept="Awa6H" id="49nnUSS0U08" role="Awa7q">
-          <property role="Awa6z" value="1" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="49nnUSS0TZR" role="2TxCcr">
-        <property role="TrG5h" value="TransactionLotReceivablesUsed" />
-        <node concept="Awa6H" id="49nnUSS0U0b" role="Awa7q">
-          <property role="Awa6z" value="100" />
-        </node>
-      </node>
-      <node concept="2TxCgq" id="49nnUSS0U0e" role="2TxCcr">
-        <property role="TrG5h" value="AccountProFormaCashAvailable" />
-        <node concept="Awa6H" id="49nnUSS0U0o" role="Awa7q">
-          <property role="Awa6z" value="125" />
-        </node>
-      </node>
-      <node concept="2TxCkf" id="49nnUSS0ePe" role="2TxCc9">
-        <property role="2TxCke" value="Expect no violation and net cash available" />
-      </node>
-      <node concept="1Unh6N" id="6TYbYUaJx7M" role="2TxCcK">
-        <node concept="Awa6K" id="6TYbYUaJKoe" role="1Unh6d" />
-        <node concept="Awa6H" id="6TYbYUaJKq0" role="1Unh6d">
-          <property role="Awa6z" value="25" />
-        </node>
-      </node>
-    </node>
-    <node concept="BqnXj" id="49nnUSS2Rog" role="2TxCjL">
-      <node concept="1Unh6N" id="49nnUSS2Roi" role="1UngFV">
-        <node concept="Awa6K" id="49nnUSS2Ros" role="1Unh6d">
-          <property role="Awa6Q" value="true" />
+      <node concept="2TxCkf" id="2HmmHNV9LgH" role="2TxCc9" />
+      <node concept="1Unh6N" id="2HmmHNV9LgI" role="2TxCcK">
+        <node concept="Awa6H" id="2HmmHNV9MaA" role="1Unh6d">
+          <property role="Awa6z" value="0" />
         </node>
       </node>
     </node>

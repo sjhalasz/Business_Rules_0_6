@@ -8,129 +8,66 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
-  <root nodeRef="r:9d4ff02d-e28a-4c8b-b017-e176800ba5a4(BusinessRules.sandbox)/4780394731345603902">
+  <root nodeRef="r:9d4ff02d-e28a-4c8b-b017-e176800ba5a4(BusinessRules.sandbox)/3122783296780964895">
     <file name="map_Rule.java">
-      <node id="4780394731345603902" at="7,157,8,62" concept="6" />
-      <node id="4780394731345603902" at="8,62,9,53" concept="6" />
-      <node id="4780394731346294255" at="10,122,11,95" concept="5" />
-      <node id="4780394731345603902" at="12,5,13,34" concept="6" />
-      <node id="4780394731346294288" at="13,34,14,30" concept="5" />
-      <node id="4780394731345603902" at="17,42,18,43" concept="1" />
-      <node id="651338024220468882" at="18,43,19,59" concept="1" />
-      <node id="4780394731345603914" at="19,59,20,64" concept="1" />
-      <node id="4780394731345603902" at="23,31,24,19" concept="5" />
-      <node id="4780394731345603902" at="25,5,26,14" concept="4" />
-      <node id="4780394731345603902" at="28,33,29,21" concept="5" />
-      <node id="4780394731345603902" at="31,5,32,16" concept="5" />
-      <node id="4780394731345603902" at="35,12,36,44" concept="1" />
-      <node id="4780394731345603902" at="37,12,38,40" concept="1" />
-      <node id="4780394731345603902" at="37,10,39,5" concept="0" />
-      <node id="4780394731345603902" at="9,53,12,5" concept="3" />
-      <node id="4780394731345603902" at="22,57,25,5" concept="3" />
-      <node id="4780394731345603902" at="27,37,30,7" concept="3" />
-      <node id="4780394731345603902" at="17,0,22,0" concept="7" trace="main#([Ljava/lang/String;)V" />
-      <node id="4780394731345603902" at="26,14,31,5" concept="2" />
-      <node id="4780394731345603902" at="34,39,39,5" concept="3" />
-      <node id="4780394731345603902" at="34,0,41,0" concept="7" trace="test#(Z)V" />
-      <node id="4780394731345603902" at="7,0,16,0" concept="7" trace="From#(IIII)[Ljava/lang/Object;" />
-      <node id="4780394731345603902" at="22,0,34,0" concept="7" trace="sameAs#([Ljava/lang/Object;[Ljava/lang/Object;)Z" />
-      <scope id="4780394731345603902" at="10,122,11,95" />
-      <scope id="4780394731345603902" at="23,31,24,19" />
-      <scope id="4780394731345603902" at="28,33,29,21" />
-      <scope id="4780394731345603902" at="35,12,36,44" />
-      <scope id="4780394731345603902" at="37,12,38,40" />
-      <scope id="4780394731345603902" at="17,42,20,64" />
-      <scope id="4780394731345603902" at="27,37,30,7" />
-      <scope id="4780394731345603902" at="17,0,22,0">
-        <var name="args" id="4780394731345603902" />
+      <node id="3122783296780964895" at="7,134,8,49" concept="6" />
+      <node id="3122783296780965955" at="9,15,10,13" concept="5" />
+      <node id="3122783296780966114" at="12,15,13,13" concept="5" />
+      <node id="3122783296780967019" at="15,15,16,13" concept="5" />
+      <node id="3122783296780964895" at="17,5,18,36" concept="6" />
+      <node id="3122783296780964902" at="18,36,19,27" concept="5" />
+      <node id="3122783296780964895" at="22,42,23,43" concept="1" />
+      <node id="3122783296780964905" at="23,43,24,70" concept="1" />
+      <node id="3122783296780964895" at="27,31,28,19" concept="5" />
+      <node id="3122783296780964895" at="29,5,30,14" concept="4" />
+      <node id="3122783296780964895" at="32,33,33,21" concept="5" />
+      <node id="3122783296780964895" at="35,5,36,16" concept="5" />
+      <node id="3122783296780964895" at="39,12,40,44" concept="1" />
+      <node id="3122783296780964895" at="41,12,42,40" concept="1" />
+      <node id="3122783296780964895" at="41,10,43,5" concept="0" />
+      <node id="3122783296780965955" at="8,49,11,5" concept="3" />
+      <node id="3122783296780966114" at="11,5,14,5" concept="3" />
+      <node id="3122783296780967019" at="14,5,17,5" concept="3" />
+      <node id="3122783296780964895" at="26,57,29,5" concept="3" />
+      <node id="3122783296780964895" at="31,37,34,7" concept="3" />
+      <node id="3122783296780964895" at="22,0,26,0" concept="7" trace="main#([Ljava/lang/String;)V" />
+      <node id="3122783296780964895" at="30,14,35,5" concept="2" />
+      <node id="3122783296780964895" at="38,39,43,5" concept="3" />
+      <node id="3122783296780964895" at="38,0,45,0" concept="7" trace="test#(Z)V" />
+      <node id="3122783296780964895" at="26,0,38,0" concept="7" trace="sameAs#([Ljava/lang/Object;[Ljava/lang/Object;)Z" />
+      <node id="3122783296780964895" at="7,0,21,0" concept="7" trace="From#(ZZZI)[Ljava/lang/Object;" />
+      <scope id="3122783296780965955" at="9,15,10,13" />
+      <scope id="3122783296780966114" at="12,15,13,13" />
+      <scope id="3122783296780967019" at="15,15,16,13" />
+      <scope id="3122783296780964895" at="27,31,28,19" />
+      <scope id="3122783296780964895" at="32,33,33,21" />
+      <scope id="3122783296780964895" at="39,12,40,44" />
+      <scope id="3122783296780964895" at="41,12,42,40" />
+      <scope id="3122783296780964895" at="22,42,24,70" />
+      <scope id="3122783296780964895" at="31,37,34,7" />
+      <scope id="3122783296780964895" at="22,0,26,0">
+        <var name="args" id="3122783296780964895" />
       </scope>
-      <scope id="4780394731345603902" at="26,14,31,5" />
-      <scope id="4780394731345603902" at="34,39,39,5" />
-      <scope id="4780394731345603902" at="7,157,14,30" />
-      <scope id="4780394731345603902" at="34,0,41,0">
-        <var name="b" id="4780394731345603902" />
+      <scope id="3122783296780964895" at="30,14,35,5" />
+      <scope id="3122783296780964895" at="38,39,43,5" />
+      <scope id="3122783296780964895" at="38,0,45,0">
+        <var name="b" id="3122783296780964895" />
       </scope>
-      <scope id="4780394731345603902" at="7,0,16,0">
-        <var name="AccountProFormaCashAvailable" id="4780394731345603983" />
-        <var name="LotDaysSincePurchase" id="4780394731345603953" />
-        <var name="NumberOfSettlementDays" id="4780394731345603905" />
-        <var name="TransactionLotReceivablesUsed" id="4780394731345603967" />
+      <scope id="3122783296780964895" at="26,57,36,16">
+        <var name="i" id="3122783296780964895" />
       </scope>
-      <scope id="4780394731345603902" at="22,57,32,16">
-        <var name="i" id="4780394731345603902" />
+      <scope id="3122783296780964895" at="7,134,19,27" />
+      <scope id="3122783296780964895" at="26,0,38,0">
+        <var name="a" id="3122783296780964895" />
+        <var name="b" id="3122783296780964895" />
       </scope>
-      <scope id="4780394731345603902" at="22,0,34,0">
-        <var name="a" id="4780394731345603902" />
-        <var name="b" id="4780394731345603902" />
+      <scope id="3122783296780964895" at="7,0,21,0">
+        <var name="CashClient" id="3122783296780964898" />
+        <var name="MoneyMarketSecurity" id="3122783296780965274" />
+        <var name="TransactionDate" id="3122783296780965726" />
+        <var name="TreasuryBillSecurity" id="3122783296780965526" />
       </scope>
-      <unit id="4780394731345603902" at="6,0,42,0" name="BusinessRules.sandbox.map_Rule" />
-    </file>
-  </root>
-  <root nodeRef="r:9d4ff02d-e28a-4c8b-b017-e176800ba5a4(BusinessRules.sandbox)/5935249838827268800">
-    <file name="map_Rule.java">
-      <node id="5935249838827268800" at="7,134,8,49" concept="6" />
-      <node id="5935249838827268800" at="8,49,9,45" concept="6" />
-      <node id="4303655791883867258" at="10,68,11,29" concept="5" />
-      <node id="5935249838827268800" at="12,5,13,56" concept="6" />
-      <node id="4303655791883867142" at="14,37,15,29" concept="5" />
-      <node id="5935249838827268800" at="16,5,17,54" concept="6" />
-      <node id="4303655791883867156" at="18,37,19,29" concept="5" />
-      <node id="5935249838827268800" at="20,5,21,40" concept="6" />
-      <node id="4303655791883867170" at="21,40,22,27" concept="5" />
-      <node id="5935249838827268800" at="25,42,26,43" concept="1" />
-      <node id="6082726028771032218" at="26,43,27,70" concept="1" />
-      <node id="6082726028771032273" at="27,70,28,70" concept="1" />
-      <node id="651338024220468954" at="28,70,29,71" concept="1" />
-      <node id="5935249838827268800" at="32,31,33,19" concept="5" />
-      <node id="5935249838827268800" at="34,5,35,14" concept="4" />
-      <node id="5935249838827268800" at="37,33,38,21" concept="5" />
-      <node id="5935249838827268800" at="40,5,41,16" concept="5" />
-      <node id="5935249838827268800" at="44,12,45,44" concept="1" />
-      <node id="5935249838827268800" at="46,12,47,40" concept="1" />
-      <node id="5935249838827268800" at="46,10,48,5" concept="0" />
-      <node id="5935249838827268800" at="9,45,12,5" concept="3" />
-      <node id="5935249838827268800" at="13,56,16,5" concept="3" />
-      <node id="5935249838827268800" at="17,54,20,5" concept="3" />
-      <node id="5935249838827268800" at="31,57,34,5" concept="3" />
-      <node id="5935249838827268800" at="36,37,39,7" concept="3" />
-      <node id="5935249838827268800" at="35,14,40,5" concept="2" />
-      <node id="5935249838827268800" at="43,39,48,5" concept="3" />
-      <node id="5935249838827268800" at="25,0,31,0" concept="7" trace="main#([Ljava/lang/String;)V" />
-      <node id="5935249838827268800" at="43,0,50,0" concept="7" trace="test#(Z)V" />
-      <node id="5935249838827268800" at="31,0,43,0" concept="7" trace="sameAs#([Ljava/lang/Object;[Ljava/lang/Object;)Z" />
-      <node id="5935249838827268800" at="7,0,24,0" concept="7" trace="From#(ZZZI)[Ljava/lang/Object;" />
-      <scope id="5935249838827268800" at="10,68,11,29" />
-      <scope id="5935249838827268800" at="14,37,15,29" />
-      <scope id="5935249838827268800" at="18,37,19,29" />
-      <scope id="5935249838827268800" at="32,31,33,19" />
-      <scope id="5935249838827268800" at="37,33,38,21" />
-      <scope id="5935249838827268800" at="44,12,45,44" />
-      <scope id="5935249838827268800" at="46,12,47,40" />
-      <scope id="5935249838827268800" at="36,37,39,7" />
-      <scope id="5935249838827268800" at="25,42,29,71" />
-      <scope id="5935249838827268800" at="35,14,40,5" />
-      <scope id="5935249838827268800" at="43,39,48,5" />
-      <scope id="5935249838827268800" at="25,0,31,0">
-        <var name="args" id="5935249838827268800" />
-      </scope>
-      <scope id="5935249838827268800" at="43,0,50,0">
-        <var name="b" id="5935249838827268800" />
-      </scope>
-      <scope id="5935249838827268800" at="31,57,41,16">
-        <var name="i" id="5935249838827268800" />
-      </scope>
-      <scope id="5935249838827268800" at="31,0,43,0">
-        <var name="a" id="5935249838827268800" />
-        <var name="b" id="5935249838827268800" />
-      </scope>
-      <scope id="5935249838827268800" at="7,134,22,27" />
-      <scope id="5935249838827268800" at="7,0,24,0">
-        <var name="CashClient" id="5935249838827268801" />
-        <var name="MoneyMarketSecurity" id="5935249838827268824" />
-        <var name="TransactionDate" id="5935249838827268844" />
-        <var name="TreasuryBillSecurity" id="5935249838827268833" />
-      </scope>
-      <unit id="5935249838827268800" at="6,0,51,0" name="BusinessRules.sandbox.map_Rule" />
+      <unit id="3122783296780964895" at="6,0,46,0" name="BusinessRules.sandbox.map_Rule" />
     </file>
   </root>
 </debug-info>
