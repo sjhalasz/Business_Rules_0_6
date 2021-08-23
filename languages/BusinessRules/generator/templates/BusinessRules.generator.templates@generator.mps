@@ -767,13 +767,13 @@
       </node>
     </node>
     <node concept="3aamgX" id="59uf$wSw2Aw" role="3acgRq">
-      <ref role="30HIoZ" to="vigk:D1JLeNLND$" resolve="TypeBoolean" />
+      <ref role="30HIoZ" to="vigk:D1JLeNLND$" resolve="Status" />
       <node concept="gft3U" id="59uf$wSw2F$" role="1lVwrX">
         <node concept="10P_77" id="59uf$wSw2FE" role="gfFT$" />
       </node>
     </node>
     <node concept="3aamgX" id="59uf$wSw2FG" role="3acgRq">
-      <ref role="30HIoZ" to="vigk:D1JLeNLNDY" resolve="TypeDate" />
+      <ref role="30HIoZ" to="vigk:D1JLeNLNDY" resolve="Date" />
       <node concept="gft3U" id="59uf$wSw2P2" role="1lVwrX">
         <node concept="10Oyi0" id="59uf$wSw2P8" role="gfFT$" />
       </node>
@@ -988,10 +988,10 @@
               <node concept="3clFbS" id="6TYbYUaJ0fr" role="2VODD2">
                 <node concept="3clFbF" id="6TYbYUaJ0fx" role="3cqZAp">
                   <node concept="2OqwBi" id="6TYbYUaJ0fs" role="3clFbG">
-                    <node concept="3Tsc0h" id="6TYbYUaJ0fv" role="2OqNvi">
+                    <node concept="30H73N" id="6TYbYUaJ0fw" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="4waDHVxyGie" role="2OqNvi">
                       <ref role="3TtcxE" to="vigk:D1JLeNLNJI" resolve="unitTests" />
                     </node>
-                    <node concept="30H73N" id="6TYbYUaJ0fw" role="2Oq$k0" />
                   </node>
                 </node>
               </node>

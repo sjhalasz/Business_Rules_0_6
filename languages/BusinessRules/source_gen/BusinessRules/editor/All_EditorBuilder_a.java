@@ -88,7 +88,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return LINKS.ifConditions$Y0D8;
     }
     public SAbstractConcept getChildSConcept() {
-      return CONCEPTS.Boolean$lg;
+      return CONCEPTS.IfCondition$lg;
     }
 
     public EditorCell createNodeCell(SNode elementNode) {
@@ -144,6 +144,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept Boolean$lg = MetaAdapterFactory.getConcept(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L, "BusinessRules.structure.Boolean");
+    /*package*/ static final SConcept IfCondition$lg = MetaAdapterFactory.getConcept(0xb885910aced43e1L, 0x8b6d9840b91c1156L, 0xa41bf13b3c73a07L, "BusinessRules.structure.IfCondition");
   }
 }

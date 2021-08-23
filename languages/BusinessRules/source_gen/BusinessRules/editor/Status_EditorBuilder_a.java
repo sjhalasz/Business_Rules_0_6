@@ -9,11 +9,11 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 
-/*package*/ class Date_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class Status_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public Date_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public Status_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -29,8 +29,8 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
   }
 
   private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Date");
-    editorCell.setCellId("Constant_dwy1sf_a");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "Status");
+    editorCell.setCellId("Constant_gjf57x_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.setDefaultText("");

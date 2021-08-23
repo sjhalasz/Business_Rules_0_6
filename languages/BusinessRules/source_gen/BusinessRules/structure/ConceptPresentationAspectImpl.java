@@ -12,10 +12,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_All;
   private ConceptPresentation props_Any;
   private ConceptPresentation props_Before;
-  private ConceptPresentation props_Boolean;
   private ConceptPresentation props_Comment;
   private ConceptPresentation props_Date;
   private ConceptPresentation props_DatePicker;
+  private ConceptPresentation props_DateX;
+  private ConceptPresentation props_IfCondition;
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_LessThan;
   private ConceptPresentation props_Minus;
@@ -26,14 +27,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ParameterReferenceInteger;
   private ConceptPresentation props_ReturnMultiple;
   private ConceptPresentation props_Rule;
+  private ConceptPresentation props_Status;
   private ConceptPresentation props_Test;
   private ConceptPresentation props_TestParameterValue;
   private ConceptPresentation props_Type;
-  private ConceptPresentation props_TypeBoolean;
-  private ConceptPresentation props_TypeDate;
-  private ConceptPresentation props_UserType;
-  private ConceptPresentation props_UserTypeDate;
-  private ConceptPresentation props_UserTypeStatus;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_ValueBoolean;
   private ConceptPresentation props_ValueInteger;
@@ -65,12 +62,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Before = cpb.create();
         }
         return props_Before;
-      case LanguageConceptSwitch.Boolean:
-        if (props_Boolean == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Boolean = cpb.create();
-        }
-        return props_Boolean;
       case LanguageConceptSwitch.Comment:
         if (props_Comment == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -81,6 +72,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Date:
         if (props_Date == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Date");
           props_Date = cpb.create();
         }
         return props_Date;
@@ -91,6 +83,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DatePicker = cpb.create();
         }
         return props_DatePicker;
+      case LanguageConceptSwitch.DateX:
+        if (props_DateX == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_DateX = cpb.create();
+        }
+        return props_DateX;
+      case LanguageConceptSwitch.IfCondition:
+        if (props_IfCondition == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IfCondition = cpb.create();
+        }
+        return props_IfCondition;
       case LanguageConceptSwitch.IfStatement:
         if (props_IfStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -161,6 +165,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Rule = cpb.create();
         }
         return props_Rule;
+      case LanguageConceptSwitch.Status:
+        if (props_Status == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Status");
+          props_Status = cpb.create();
+        }
+        return props_Status;
       case LanguageConceptSwitch.Test:
         if (props_Test == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -181,40 +192,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Type = cpb.create();
         }
         return props_Type;
-      case LanguageConceptSwitch.TypeBoolean:
-        if (props_TypeBoolean == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("boolean");
-          props_TypeBoolean = cpb.create();
-        }
-        return props_TypeBoolean;
-      case LanguageConceptSwitch.TypeDate:
-        if (props_TypeDate == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("int");
-          props_TypeDate = cpb.create();
-        }
-        return props_TypeDate;
-      case LanguageConceptSwitch.UserType:
-        if (props_UserType == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_UserType = cpb.create();
-        }
-        return props_UserType;
-      case LanguageConceptSwitch.UserTypeDate:
-        if (props_UserTypeDate == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("date");
-          props_UserTypeDate = cpb.create();
-        }
-        return props_UserTypeDate;
-      case LanguageConceptSwitch.UserTypeStatus:
-        if (props_UserTypeStatus == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("status");
-          props_UserTypeStatus = cpb.create();
-        }
-        return props_UserTypeStatus;
       case LanguageConceptSwitch.Value:
         if (props_Value == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

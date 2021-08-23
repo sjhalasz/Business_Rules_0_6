@@ -49,7 +49,7 @@
   </registry>
   <node concept="1TIwiD" id="D1JLeNLNC7">
     <property role="EcuMT" value="739081905206934023" />
-    <property role="TrG5h" value="Boolean" />
+    <property role="TrG5h" value="IfCondition" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="Type" />
     <property role="34LRSv" value="status" />
@@ -67,9 +67,10 @@
   </node>
   <node concept="1TIwiD" id="D1JLeNLNCv">
     <property role="EcuMT" value="739081905206934047" />
-    <property role="TrG5h" value="Date" />
+    <property role="TrG5h" value="DateX" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="Type" />
+    <property role="34LRSv" value="date" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="D1JLeNLNCE">
@@ -77,7 +78,7 @@
     <property role="TrG5h" value="DatePicker" />
     <property role="34LRSv" value="&lt;date&gt;" />
     <property role="3GE5qa" value="Type" />
-    <ref role="1TJDcQ" node="D1JLeNLNCv" resolve="Date" />
+    <ref role="1TJDcQ" node="D1JLeNLNCv" resolve="DateX" />
     <node concept="1TJgyi" id="D1JLeNLNCP" role="1TKVEl">
       <property role="IQ2nx" value="739081905206934069" />
       <property role="TrG5h" value="date" />
@@ -93,15 +94,13 @@
   </node>
   <node concept="1TIwiD" id="D1JLeNLND$">
     <property role="EcuMT" value="739081905206934116" />
-    <property role="TrG5h" value="TypeBoolean" />
-    <property role="34LRSv" value="boolean" />
+    <property role="TrG5h" value="Status" />
     <property role="3GE5qa" value="Type" />
     <ref role="1TJDcQ" node="D1JLeNLNDp" resolve="Type" />
   </node>
   <node concept="1TIwiD" id="D1JLeNLNDY">
     <property role="EcuMT" value="739081905206934142" />
-    <property role="TrG5h" value="TypeDate" />
-    <property role="34LRSv" value="int" />
+    <property role="TrG5h" value="Date" />
     <property role="3GE5qa" value="Type" />
     <ref role="1TJDcQ" node="D1JLeNLNDp" resolve="Type" />
   </node>
@@ -109,13 +108,13 @@
     <property role="EcuMT" value="739081905206934181" />
     <property role="TrG5h" value="Any" />
     <property role="3GE5qa" value="Operators" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="D1JLeNLNEZ" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934207" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ifConditions" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="D1JLeNLNC7" resolve="Boolean" />
+      <ref role="20lvS9" node="D1JLeNLNC7" resolve="IfCondition" />
     </node>
   </node>
   <node concept="1TIwiD" id="D1JLeNLNFb">
@@ -123,20 +122,20 @@
     <property role="TrG5h" value="Before" />
     <property role="3GE5qa" value="Operators" />
     <property role="34LRSv" value="is before" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="D1JLeNLNFc" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934220" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="date1" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="D1JLeNLNCv" resolve="Date" />
+      <ref role="20lvS9" node="D1JLeNLNCv" resolve="DateX" />
     </node>
     <node concept="1TJgyj" id="D1JLeNLNFe" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934222" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="date2" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="D1JLeNLNCv" resolve="Date" />
+      <ref role="20lvS9" node="D1JLeNLNCv" resolve="DateX" />
     </node>
   </node>
   <node concept="1TIwiD" id="D1JLeNLNFh">
@@ -151,13 +150,6 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="D1JLeNLNDp" resolve="Type" />
     </node>
-    <node concept="1TJgyj" id="2HmmHNVgNwW" role="1TKVEi">
-      <property role="IQ2ns" value="3122783296782809148" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="userType" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="2HmmHNVgNww" resolve="UserType" />
-    </node>
     <node concept="PrWs8" id="$a17HEnvY_" role="PzmwI">
       <ref role="PrY4T" to="tpee:hCUYCKd" resolve="IValidIdentifier" />
     </node>
@@ -166,7 +158,7 @@
     <property role="EcuMT" value="739081905206934250" />
     <property role="TrG5h" value="ParameterReferenceBoolean" />
     <property role="3GE5qa" value="Parameter" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="D1JLeNLNFZ" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934271" />
       <property role="20kJfa" value="parameter" />
@@ -178,7 +170,7 @@
     <property role="EcuMT" value="739081905206934273" />
     <property role="TrG5h" value="ParameterReferenceDate" />
     <property role="3GE5qa" value="Parameter" />
-    <ref role="1TJDcQ" node="D1JLeNLNCv" resolve="Date" />
+    <ref role="1TJDcQ" node="D1JLeNLNCv" resolve="DateX" />
     <node concept="1TJgyj" id="D1JLeNLNG7" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934279" />
       <property role="20kJfa" value="parameter" />
@@ -218,7 +210,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ifCondition" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="D1JLeNLNC7" resolve="Boolean" />
+      <ref role="20lvS9" node="D1JLeNLNC7" resolve="IfCondition" />
     </node>
     <node concept="1TJgyj" id="D1JLeNLNHz" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934371" />
@@ -238,13 +230,6 @@
     </node>
     <node concept="PrWs8" id="D1JLeNLNIC" role="PzmwI">
       <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
-    </node>
-    <node concept="1TJgyj" id="5hEbLxMW6M7" role="1TKVEi">
-      <property role="IQ2ns" value="6082726028771355783" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="returnType" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="D1JLeNLNFh" resolve="Parameter" />
     </node>
     <node concept="1TJgyj" id="D1JLeNLNIK" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934448" />
@@ -285,7 +270,7 @@
       <property role="IQ2ns" value="739081905206934510" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="unitTests" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="D1JLeNLNK0" resolve="Test" />
     </node>
   </node>
@@ -356,7 +341,7 @@
     <property role="EcuMT" value="6082726028772337827" />
     <property role="TrG5h" value="LessThan" />
     <property role="3GE5qa" value="Operators" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxMZQzD" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772337897" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -388,20 +373,20 @@
     <property role="EcuMT" value="6082726028772460268" />
     <property role="TrG5h" value="All" />
     <property role="3GE5qa" value="Operators" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxN0ktn" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772460375" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="ifConditions" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="D1JLeNLNC7" resolve="Boolean" />
+      <ref role="20lvS9" node="D1JLeNLNC7" resolve="IfCondition" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hEbLxN0lJI">
     <property role="EcuMT" value="6082726028772465646" />
     <property role="TrG5h" value="NotLessThan" />
     <property role="3GE5qa" value="Operators" />
-    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="Boolean" />
+    <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxN0lL5" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772465733" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -461,27 +446,6 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="5hEbLxMUr6S" resolve="Value" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2HmmHNVgNww">
-    <property role="EcuMT" value="3122783296782809120" />
-    <property role="3GE5qa" value="Type" />
-    <property role="TrG5h" value="UserType" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="2HmmHNVgNwA">
-    <property role="EcuMT" value="3122783296782809126" />
-    <property role="3GE5qa" value="Type" />
-    <property role="TrG5h" value="UserTypeDate" />
-    <property role="34LRSv" value="date" />
-    <ref role="1TJDcQ" node="2HmmHNVgNww" resolve="UserType" />
-  </node>
-  <node concept="1TIwiD" id="2HmmHNVgNwG">
-    <property role="EcuMT" value="3122783296782809132" />
-    <property role="3GE5qa" value="Type" />
-    <property role="TrG5h" value="UserTypeStatus" />
-    <property role="34LRSv" value="status" />
-    <ref role="1TJDcQ" node="2HmmHNVgNww" resolve="UserType" />
   </node>
 </model>
 
