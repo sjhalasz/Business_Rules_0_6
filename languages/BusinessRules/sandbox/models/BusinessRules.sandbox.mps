@@ -7,7 +7,7 @@
   <imports />
   <registry>
     <language id="0b885910-aced-43e1-8b6d-9840b91c1156" name="BusinessRules">
-      <concept id="6082726028770971317" name="BusinessRules.structure.ValueInteger" flags="ng" index="Awa6H">
+      <concept id="6082726028770971317" name="BusinessRules.structure.Days" flags="ng" index="Awa6H">
         <property id="6082726028770971323" name="value" index="Awa6z" />
       </concept>
       <concept id="6082726028772593739" name="BusinessRules.structure.ReturnMultiple" flags="ng" index="BqnXj">

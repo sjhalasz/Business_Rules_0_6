@@ -108,6 +108,7 @@
     <property role="EcuMT" value="739081905206934181" />
     <property role="TrG5h" value="Any" />
     <property role="3GE5qa" value="Operators" />
+    <property role="34LRSv" value="any of" />
     <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="D1JLeNLNEZ" role="1TKVEi">
       <property role="IQ2ns" value="739081905206934207" />
@@ -328,8 +329,9 @@
   </node>
   <node concept="1TIwiD" id="5hEbLxMUCUP">
     <property role="EcuMT" value="6082726028770971317" />
-    <property role="TrG5h" value="ValueInteger" />
+    <property role="TrG5h" value="Days" />
     <property role="3GE5qa" value="Value" />
+    <property role="34LRSv" value="Days" />
     <ref role="1TJDcQ" node="5hEbLxMUr6S" resolve="Value" />
     <node concept="1TJgyi" id="5hEbLxMUCUV" role="1TKVEl">
       <property role="IQ2nx" value="6082726028770971323" />
@@ -341,27 +343,28 @@
     <property role="EcuMT" value="6082726028772337827" />
     <property role="TrG5h" value="LessThan" />
     <property role="3GE5qa" value="Operators" />
+    <property role="34LRSv" value="is less than" />
     <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxMZQzD" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772337897" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
     <node concept="1TJgyj" id="5hEbLxMZQ$W" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772337980" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hEbLxN03Ry">
     <property role="EcuMT" value="6082726028772392418" />
     <property role="TrG5h" value="ParameterReferenceInteger" />
     <property role="3GE5qa" value="Parameter" />
-    <ref role="1TJDcQ" node="5hEbLxMUCUP" resolve="ValueInteger" />
+    <ref role="1TJDcQ" node="5hEbLxMUCUP" resolve="Days" />
     <node concept="1TJgyj" id="5hEbLxN03T3" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772392515" />
       <property role="20kJfa" value="parameter" />
@@ -373,6 +376,7 @@
     <property role="EcuMT" value="6082726028772460268" />
     <property role="TrG5h" value="All" />
     <property role="3GE5qa" value="Operators" />
+    <property role="34LRSv" value="all of" />
     <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxN0ktn" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772460375" />
@@ -386,20 +390,21 @@
     <property role="EcuMT" value="6082726028772465646" />
     <property role="TrG5h" value="NotLessThan" />
     <property role="3GE5qa" value="Operators" />
+    <property role="34LRSv" value="is not less than" />
     <ref role="1TJDcQ" node="D1JLeNLNC7" resolve="IfCondition" />
     <node concept="1TJgyj" id="5hEbLxN0lL5" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772465733" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
     <node concept="1TJgyj" id="5hEbLxN0lLX" role="1TKVEi">
       <property role="IQ2ns" value="6082726028772465789" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
   </node>
   <node concept="1TIwiD" id="5hEbLxN0P1b">
@@ -418,20 +423,21 @@
     <property role="EcuMT" value="4780394731345421364" />
     <property role="TrG5h" value="Minus" />
     <property role="3GE5qa" value="Operators" />
-    <ref role="1TJDcQ" node="5hEbLxMUCUP" resolve="ValueInteger" />
+    <property role="34LRSv" value="minus" />
+    <ref role="1TJDcQ" node="5hEbLxMUCUP" resolve="Days" />
     <node concept="1TJgyj" id="49nnUSRZygU" role="1TKVEi">
       <property role="IQ2ns" value="4780394731345421370" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="left" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
     <node concept="1TJgyj" id="49nnUSRZygW" role="1TKVEi">
       <property role="IQ2ns" value="4780394731345421372" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="right" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="20lvS9" node="5hEbLxMUCUP" resolve="Days" />
     </node>
   </node>
   <node concept="1TIwiD" id="49nnUSS2$St">

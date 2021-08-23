@@ -6,6 +6,18 @@ package BusinessRules.sandbox;
 public class map_Rule {
   protected static Object[] From(boolean CashClient, boolean MoneyMarketSecurity, boolean TreasuryBillSecurity, int TransactionDate) {
     // Number of days from contract to settlement
+    // The following cases settle immediately
+    if (CashClient || MoneyMarketSecurity || TreasuryBillSecurity) {
+      return new Object[]{0};
+    }
+    // In other cases, until June 5, 1995, it was 5 days
+    if (TransactionDate < 19950605) {
+      return new Object[]{5};
+    }
+    // From then until September 7, 2017 it was 3 days
+    if (TransactionDate < 20170907) {
+      return new Object[]{3};
+    }
     // From then until now, is 2 days
     return new Object[]{2};
   }

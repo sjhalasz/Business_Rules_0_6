@@ -16,6 +16,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Date;
   private ConceptPresentation props_DatePicker;
   private ConceptPresentation props_DateX;
+  private ConceptPresentation props_Days;
   private ConceptPresentation props_IfCondition;
   private ConceptPresentation props_IfStatement;
   private ConceptPresentation props_LessThan;
@@ -33,7 +34,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Type;
   private ConceptPresentation props_Value;
   private ConceptPresentation props_ValueBoolean;
-  private ConceptPresentation props_ValueInteger;
   private ConceptPresentation props_ValueMultiple;
 
   @Override
@@ -44,14 +44,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.All:
         if (props_All == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("All");
+          cpb.rawPresentation("all of");
           props_All = cpb.create();
         }
         return props_All;
       case LanguageConceptSwitch.Any:
         if (props_Any == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Any");
+          cpb.rawPresentation("any of");
           props_Any = cpb.create();
         }
         return props_Any;
@@ -89,6 +89,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_DateX = cpb.create();
         }
         return props_DateX;
+      case LanguageConceptSwitch.Days:
+        if (props_Days == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Days");
+          props_Days = cpb.create();
+        }
+        return props_Days;
       case LanguageConceptSwitch.IfCondition:
         if (props_IfCondition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -105,21 +112,21 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.LessThan:
         if (props_LessThan == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("LessThan");
+          cpb.rawPresentation("is less than");
           props_LessThan = cpb.create();
         }
         return props_LessThan;
       case LanguageConceptSwitch.Minus:
         if (props_Minus == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Minus");
+          cpb.rawPresentation("minus");
           props_Minus = cpb.create();
         }
         return props_Minus;
       case LanguageConceptSwitch.NotLessThan:
         if (props_NotLessThan == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NotLessThan");
+          cpb.rawPresentation("is not less than");
           props_NotLessThan = cpb.create();
         }
         return props_NotLessThan;
@@ -205,13 +212,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ValueBoolean = cpb.create();
         }
         return props_ValueBoolean;
-      case LanguageConceptSwitch.ValueInteger:
-        if (props_ValueInteger == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ValueInteger");
-          props_ValueInteger = cpb.create();
-        }
-        return props_ValueInteger;
       case LanguageConceptSwitch.ValueMultiple:
         if (props_ValueMultiple == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

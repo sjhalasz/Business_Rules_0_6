@@ -711,7 +711,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="5hEbLxMV4IE" role="3acgRq">
-      <ref role="30HIoZ" to="vigk:5hEbLxMUCUP" resolve="ValueInteger" />
+      <ref role="30HIoZ" to="vigk:5hEbLxMUCUP" resolve="Days" />
       <node concept="gft3U" id="5hEbLxMV4QB" role="1lVwrX">
         <node concept="3cmrfG" id="5hEbLxMV4QH" role="gfFT$">
           <property role="3cmrfH" value="0" />

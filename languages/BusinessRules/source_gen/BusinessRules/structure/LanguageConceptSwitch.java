@@ -16,24 +16,24 @@ public final class LanguageConceptSwitch {
   public static final int Date = 4;
   public static final int DatePicker = 5;
   public static final int DateX = 6;
-  public static final int IfCondition = 7;
-  public static final int IfStatement = 8;
-  public static final int LessThan = 9;
-  public static final int Minus = 10;
-  public static final int NotLessThan = 11;
-  public static final int Parameter = 12;
-  public static final int ParameterReferenceBoolean = 13;
-  public static final int ParameterReferenceDate = 14;
-  public static final int ParameterReferenceInteger = 15;
-  public static final int ReturnMultiple = 16;
-  public static final int Rule = 17;
-  public static final int Status = 18;
-  public static final int Test = 19;
-  public static final int TestParameterValue = 20;
-  public static final int Type = 21;
-  public static final int Value = 22;
-  public static final int ValueBoolean = 23;
-  public static final int ValueInteger = 24;
+  public static final int Days = 7;
+  public static final int IfCondition = 8;
+  public static final int IfStatement = 9;
+  public static final int LessThan = 10;
+  public static final int Minus = 11;
+  public static final int NotLessThan = 12;
+  public static final int Parameter = 13;
+  public static final int ParameterReferenceBoolean = 14;
+  public static final int ParameterReferenceDate = 15;
+  public static final int ParameterReferenceInteger = 16;
+  public static final int ReturnMultiple = 17;
+  public static final int Rule = 18;
+  public static final int Status = 19;
+  public static final int Test = 20;
+  public static final int TestParameterValue = 21;
+  public static final int Type = 22;
+  public static final int Value = 23;
+  public static final int ValueBoolean = 24;
   public static final int ValueMultiple = 25;
 
   public LanguageConceptSwitch() {
@@ -45,6 +45,7 @@ public final class LanguageConceptSwitch {
     builder.put(0xa41bf13b3c73a7eL, Date);
     builder.put(0xa41bf13b3c73a2aL, DatePicker);
     builder.put(0xa41bf13b3c73a1fL, DateX);
+    builder.put(0x546a2f1872ea8eb5L, Days);
     builder.put(0xa41bf13b3c73a07L, IfCondition);
     builder.put(0xa41bf13b3c73b44L, IfStatement);
     builder.put(0x546a2f1872ff68a3L, LessThan);
@@ -62,7 +63,6 @@ public final class LanguageConceptSwitch {
     builder.put(0xa41bf13b3c73a59L, Type);
     builder.put(0x546a2f1872e9b1b8L, Value);
     builder.put(0x546a2f1872ea8ea8L, ValueBoolean);
-    builder.put(0x546a2f1872ea8eb5L, ValueInteger);
     builder.put(0x42575fae380a4e1dL, ValueMultiple);
     myIndex = builder.seal();
   }
