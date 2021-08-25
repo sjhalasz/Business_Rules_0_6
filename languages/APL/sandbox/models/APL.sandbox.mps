@@ -36,6 +36,10 @@
         <property id="1411698675900808443" name="commentText" index="19oU2c" />
       </concept>
       <concept id="1411698675900808499" name="APL.structure.Parameter" flags="ng" index="19oU54" />
+      <concept id="1411698675901007774" name="APL.structure.LessThan" flags="ng" index="19rPJD">
+        <child id="1411698675901007777" name="value2" index="19rPJm" />
+        <child id="1411698675901007775" name="value1" index="19rPJC" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -59,7 +63,7 @@
     </node>
     <node concept="19ouiF" id="1enn7tqXKF4" role="19oHGe">
       <node concept="19oU2d" id="1enn7tqXKF6" role="19orPL">
-        <property role="19oU2c" value="For any of these cases, settlement is immediate" />
+        <property role="19oU2c" value="The following cases settle immediately" />
       </node>
       <node concept="19odde" id="1enn7tqXWxF" role="19ouiE">
         <node concept="19o5sb" id="1enn7tqXWxO" role="19oddd">
@@ -80,6 +84,42 @@
         </node>
       </node>
     </node>
+    <node concept="19ouiF" id="1enn7tqY4wK" role="19oHGe">
+      <node concept="19oU2d" id="1enn7tqY4wM" role="19orPL">
+        <property role="19oU2c" value="In other cases, until June 5, 1995, it was 5 days" />
+      </node>
+      <node concept="19rPJD" id="1enn7tqY4xP" role="19ouiE">
+        <node concept="19o5sb" id="1enn7tqY4xY" role="19rPJC">
+          <ref role="19o5sa" node="1enn7tqXyLh" resolve="TransactionDate" />
+        </node>
+        <node concept="19oswp" id="1enn7tqY4y1" role="19rPJm">
+          <property role="19oswo" value="19950605" />
+        </node>
+      </node>
+      <node concept="19o9i5" id="1enn7tqY4wQ" role="19ouiC">
+        <node concept="19oswp" id="1enn7tqY4y4" role="19o9kF">
+          <property role="19oswo" value="5" />
+        </node>
+      </node>
+    </node>
+    <node concept="19ouiF" id="1enn7tqY4xo" role="19oHGe">
+      <node concept="19oU2d" id="1enn7tqY4xq" role="19orPL">
+        <property role="19oU2c" value="From then until September 7, 2017 it was 3 days" />
+      </node>
+      <node concept="19rPJD" id="1enn7tqY4y7" role="19ouiE">
+        <node concept="19o5sb" id="1enn7tqY4yg" role="19rPJC">
+          <ref role="19o5sa" node="1enn7tqXyLh" resolve="TransactionDate" />
+        </node>
+        <node concept="19oswp" id="1enn7tqY4yj" role="19rPJm">
+          <property role="19oswo" value="20170907" />
+        </node>
+      </node>
+      <node concept="19o9i5" id="1enn7tqY4xu" role="19ouiC">
+        <node concept="19oswp" id="1enn7tqY4ym" role="19o9kF">
+          <property role="19oswo" value="3" />
+        </node>
+      </node>
+    </node>
     <node concept="19oU2d" id="1enn7tqXKEL" role="19orMY">
       <property role="19oU2c" value="Number of days from contract to settlement" />
     </node>
@@ -89,7 +129,7 @@
       </node>
     </node>
     <node concept="19oU2d" id="1enn7tqY0us" role="19o9kd">
-      <property role="19oU2c" value="From then until now, it is 2" />
+      <property role="19oU2c" value="From then until now, is 2 days" />
     </node>
   </node>
 </model>

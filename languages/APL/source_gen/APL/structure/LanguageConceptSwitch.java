@@ -13,12 +13,13 @@ public final class LanguageConceptSwitch {
   public static final int Constant = 1;
   public static final int Function = 2;
   public static final int IfStatement = 3;
-  public static final int Or = 4;
-  public static final int Parameter = 5;
-  public static final int ParameterReference = 6;
-  public static final int ResultAssignmanet = 7;
-  public static final int Statement = 8;
-  public static final int Value = 9;
+  public static final int LessThan = 4;
+  public static final int Or = 5;
+  public static final int Parameter = 6;
+  public static final int ParameterReference = 7;
+  public static final int ResultAssignmanet = 8;
+  public static final int Statement = 9;
+  public static final int Value = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x3aadf529c1324900L, 0x9d62756478c3e71aL);
@@ -26,6 +27,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x13975c775af6946eL, Constant);
     builder.put(0x13975c775af4fcf5L, Function);
     builder.put(0x13975c775af6b8dcL, IfStatement);
+    builder.put(0x13975c775af8079eL, LessThan);
     builder.put(0x13975c775af78f39L, Or);
     builder.put(0x13975c775af4fd33L, Parameter);
     builder.put(0x13975c775af70b7cL, ParameterReference);

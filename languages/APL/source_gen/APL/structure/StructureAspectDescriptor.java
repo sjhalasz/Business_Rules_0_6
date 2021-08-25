@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConstant = createDescriptorForConstant();
   /*package*/ final ConceptDescriptor myConceptFunction = createDescriptorForFunction();
   /*package*/ final ConceptDescriptor myConceptIfStatement = createDescriptorForIfStatement();
+  /*package*/ final ConceptDescriptor myConceptLessThan = createDescriptorForLessThan();
   /*package*/ final ConceptDescriptor myConceptOr = createDescriptorForOr();
   /*package*/ final ConceptDescriptor myConceptParameter = createDescriptorForParameter();
   /*package*/ final ConceptDescriptor myConceptParameterReference = createDescriptorForParameterReference();
@@ -37,7 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptComment, myConceptConstant, myConceptFunction, myConceptIfStatement, myConceptOr, myConceptParameter, myConceptParameterReference, myConceptResultAssignmanet, myConceptStatement, myConceptValue);
+    return Arrays.asList(myConceptComment, myConceptConstant, myConceptFunction, myConceptIfStatement, myConceptLessThan, myConceptOr, myConceptParameter, myConceptParameterReference, myConceptResultAssignmanet, myConceptStatement, myConceptValue);
   }
 
   @Override
@@ -52,6 +53,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFunction;
       case LanguageConceptSwitch.IfStatement:
         return myConceptIfStatement;
+      case LanguageConceptSwitch.LessThan:
+        return myConceptLessThan;
       case LanguageConceptSwitch.Or:
         return myConceptOr;
       case LanguageConceptSwitch.Parameter:
@@ -113,6 +116,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("comments", 0x13975c775af6e106L).target(0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af4fcfaL).optional(false).ordered(true).multiple(true).origin("1411698675900932358").done();
     b.aggregate("ifCondition", 0x13975c775af6b8ddL).target(0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af6946dL).optional(false).ordered(true).multiple(false).origin("1411698675900922077").done();
     b.aggregate("return", 0x13975c775af6b8dfL).target(0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af7c8f2L).optional(false).ordered(true).multiple(false).origin("1411698675900922079").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForLessThan() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("APL", "LessThan", 0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af8079eL);
+    b.class_(false, false, false);
+    b.super_("APL.structure.Value", 0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af6946dL);
+    b.origin("r:3ccb8ab9-ab62-4a0a-a691-10d9180772cf(APL.structure)/1411698675901007774");
+    b.version(2);
+    b.aggregate("value1", 0x13975c775af8079fL).target(0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af6946dL).optional(false).ordered(true).multiple(false).origin("1411698675901007775").done();
+    b.aggregate("value2", 0x13975c775af807a1L).target(0x3aadf529c1324900L, 0x9d62756478c3e71aL, 0x13975c775af6946dL).optional(false).ordered(true).multiple(false).origin("1411698675901007777").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOr() {

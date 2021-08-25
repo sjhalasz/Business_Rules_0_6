@@ -13,6 +13,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Constant;
   private ConceptPresentation props_Function;
   private ConceptPresentation props_IfStatement;
+  private ConceptPresentation props_LessThan;
   private ConceptPresentation props_Or;
   private ConceptPresentation props_Parameter;
   private ConceptPresentation props_ParameterReference;
@@ -53,6 +54,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IfStatement = cpb.create();
         }
         return props_IfStatement;
+      case LanguageConceptSwitch.LessThan:
+        if (props_LessThan == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("LessThan");
+          props_LessThan = cpb.create();
+        }
+        return props_LessThan;
       case LanguageConceptSwitch.Or:
         if (props_Or == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
