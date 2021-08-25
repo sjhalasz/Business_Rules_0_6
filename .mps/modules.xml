@@ -2,6 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/APL/APL.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/APL/sandbox/APL.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/BusinessRules/BusinessRules.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/BusinessRules/runtime/BusinessRules.runtime.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/BusinessRules/sandbox/BusinessRules.sandbox.msd" folder="" />
