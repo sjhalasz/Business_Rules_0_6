@@ -27,8 +27,10 @@
       <dependencies>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">3aadf529-c132-4900-9d62-756478c3e71a(APL)</dependency>
       </dependencies>
       <languageVersions>
+        <language slang="l:3aadf529-c132-4900-9d62-756478c3e71a:APL" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -47,6 +49,7 @@
         <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
       </languageVersions>
       <dependencyVersions>
+        <module reference="3aadf529-c132-4900-9d62-756478c3e71a(APL)" version="0" />
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
         <module reference="0b885910-aced-43e1-8b6d-9840b91c1156(BusinessRules)" version="0" />
         <module reference="06fad982-1880-4ec3-b21d-8acb40773117(BusinessRules.generator)" version="0" />
